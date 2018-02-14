@@ -17,5 +17,3 @@ Establish upstream once with this
 Just issue this command afterward to sync with upstream
 
 `git pull upstream master`
-
-nash doesn't know
