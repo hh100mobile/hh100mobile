@@ -8,12 +8,3 @@
 
 Download this app and follow instructions to view on device easily
 https://ionicframework.com/docs/pro/devapp/
-
-## Keeping Forked Repo Synced
-Establish upstream once with this
-
-`git remote add upstream https://github.com/hh100mobile/hh100mobile.git`
-
-Just issue this command afterward to sync with upstream
-
-`git pull upstream master`
