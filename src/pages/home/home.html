@@ -1,14 +1,27 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Hotter'n Hell Hundred
     </ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only clear (click)="onGoToSettings()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    <button ion-button block (click)="onGoToMap()">MAP</button>
+  </p>
+  <p>
+    <button ion-button block (click)="onGoToSchedule()">SCHEDULE OF EVENTS</button>
+  </p>
+  <p>
+    <button ion-button block (click)="onGoToAttractions()">ATTRACTIONS</button>
+  </p>
+  <p>
+    <button ion-button block outline>93 DAYS | 17 HRS | 32 MIN | 18 SEC</button>
   </p>
 </ion-content>
