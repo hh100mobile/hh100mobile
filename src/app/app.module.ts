@@ -10,6 +10,8 @@ import { SchedulePage } from '../pages/schedule/schedule';
 import { MapPage } from '../pages/map/map';
 import { AttractionsPage } from '../pages/attractions/attractions';
 import { SettingsPage } from '../pages/settings/settings';
+import { SigninPage } from '../pages/signin/signin';
+import { SignupPage } from '../pages/signup/signup';
 
 @NgModule({
   declarations: [
@@ -18,8 +20,9 @@ import { SettingsPage } from '../pages/settings/settings';
     SchedulePage,
     MapPage,
     AttractionsPage,
-    SettingsPage
-
+    SettingsPage,
+    SigninPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,9 @@ import { SettingsPage } from '../pages/settings/settings';
     SchedulePage,
     MapPage,
     AttractionsPage,
-    SettingsPage
+    SettingsPage,
+    SigninPage,
+    SignupPage
   ],
   providers: [
     StatusBar,
