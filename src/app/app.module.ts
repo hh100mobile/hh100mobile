@@ -12,6 +12,8 @@ import { AttractionsPage } from '../pages/attractions/attractions';
 import { SettingsPage } from '../pages/settings/settings';
 import { SigninPage } from '../pages/signin/signin';
 import { SignupPage } from '../pages/signup/signup';
+import { AuthService } from '../services/auth';
+import { FollowriderPage } from '../pages/followrider/followrider';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { SignupPage } from '../pages/signup/signup';
     AttractionsPage,
     SettingsPage,
     SigninPage,
-    SignupPage
+    SignupPage,
+    FollowriderPage
   ],
   imports: [
     BrowserModule,
@@ -37,12 +40,14 @@ import { SignupPage } from '../pages/signup/signup';
     AttractionsPage,
     SettingsPage,
     SigninPage,
-    SignupPage
+    SignupPage,
+    FollowriderPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthService
   ]
 })
 export class AppModule {}

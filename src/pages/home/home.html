@@ -3,7 +3,7 @@
     <ion-title>
       Hotter'n Hell Hundred
     </ion-title>
-    <ion-buttons right>
+    <ion-buttons end>
       <button ion-button icon-only clear (click)="onGoToSettings()">
         <ion-icon name="options"></ion-icon>
       </button>
@@ -13,7 +13,8 @@
 
 <ion-content padding>
   <p>
-    <button ion-button block (click)="onGoToMap()">MAP</button>
+    <button ion-button block (click)="onGoToMap()" *ngIf="isAuthenticated">MAP</button>
+    <button ion-button block (click)="onGoToFollowRider()" *ngIf="!isAuthenticated">FOLLOW RIDER</button>
   </p>
   <p>
     <button ion-button block (click)="onGoToSchedule()">SCHEDULE OF EVENTS</button>
