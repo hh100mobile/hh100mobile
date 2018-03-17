@@ -11,7 +11,13 @@
   </ion-navbar>
 </ion-header>
 
+
+
 <ion-content padding>
+  <div id="container">
+      <img src="assets/imgs/logo.png" alt="Consulta Rapida"/>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
   <p>
     <button ion-button block (click)="onGoToMap()" *ngIf="isAuthenticated">MAP</button>
     <button ion-button block (click)="onGoToFollowRider()" *ngIf="!isAuthenticated">FOLLOW RIDER</button>
