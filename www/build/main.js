@@ -36,7 +36,7 @@ var AttractionsPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-attractions',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/attractions/attractions.html"*/'<!--\n  Generated template for the AttractionsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Attractions</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/attractions/attractions.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], AttractionsPage);
     return AttractionsPage;
 }());
@@ -49,7 +49,7 @@ var AttractionsPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FollowriderPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -64,29 +64,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the MapPage page.
+ * Generated class for the FollowriderPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var MapPage = (function () {
-    function MapPage(navCtrl, navParams) {
+var FollowriderPage = (function () {
+    function FollowriderPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    MapPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MapPage');
+    FollowriderPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad FollowriderPage');
     };
-    MapPage = __decorate([
+    FollowriderPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-map',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/map/map.html"*/'<!--\n  Generated template for the MapPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Map</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/map/map.html"*/,
+            selector: 'page-followrider',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/followrider/followrider.html"*/'<!--\n  Generated template for the FollowriderPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>FOLLOW RIDER</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/followrider/followrider.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], MapPage);
-    return MapPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], FollowriderPage);
+    return FollowriderPage;
 }());
 
-//# sourceMappingURL=map.js.map
+//# sourceMappingURL=followrider.js.map
 
 /***/ }),
 
@@ -124,9 +124,9 @@ var SchedulePage = (function () {
     };
     SchedulePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-schedule',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/schedule/schedule.html"*/'<!--\n  Generated template for the SchedulePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Schedule</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-card>\n\n        <ion-card-header>\n            FIRST DAY OF 2018 HHH ACTIVITIES\n            <br>\n          THURSDAY, AUGUST 23, 2018 \n          <br>\n               3:00 PM - 8:00 PM\n    \n        </ion-card-header>\n      \n        <ion-card-content>\n          3:00 PM: The Consumer Show opens in the Exhibit Hall of the Multi-Purpose Events Center.\n          <br>\n          3:00 PM: Sports Massage at MPEC\n          <br>\n          4:00 PM: Packet Pickup and late registration open at the Exhibit Hall.\n          <br>\n          4:00 PM: USA Cycling race registration begins in the Exhibit Hall.\n          <br>\n          4:00 PM: Wee-Chi-Tah Off-Road events registration begins at the Exhibit Hall.\n          <br>\n          8:00 PM: All Activities close.\n        </ion-card-content>\n      \n      </ion-card>\n      <ion-card>\n    \n        <ion-card-header>\n            THE CELEBRATION BEGINS\n            <br>\n            FRIDAY, AUGUST 24, 2018\n            <br>\n            9:00 AM - 10:00 PM\n    \n        </ion-card-header>\n      \n        <ion-card-content>\n            9:00 AM: Wee-Chi-Tah Off-Road Trail Run registration opens - Bridwell Ag Center.<br>\n            10:00 AM:Wee-Chi-Tah Off-Road Mountain Bike Trail Races begin – Bridwell Ag Center<br>\n            1:00 PM: Consumer Show begins.<br>\n            1:00 PM: Sports Massage at MPEC. Loosen up for the day ahead.<br>\n            2:00 PM: Packet Pickup and late registration open in the Exhibit Hall for Ride and Race participants.<br>\n            3:00 PM: Finish Line Village Opens<br>\n            5:30 PM: Spaghetti Dinner Begins in the lower level of the Coliseum.<br>\n            5:00 PM: Criterium for USA Cycling racers begins at the Finish Line Village.<br>\n            Great races to watch from MPEC parking & East steps of the Coliseum - 5 PM to 7:30 PM<br>\n            7:00 PM: Start Smart/Ride Smart “How to have a successful ride at the HHH” Presented by Bikin’ Mike Keel – Author of “Train Smart” - MPEC Seminar Room;<br>\n            8:00 PM: HHH Pace Group Meeting - MPEC Seminar Room<br>\n            8:45 PM: Race Official’s Meeting – HHH Bldg – 104 Scott St. (USA Cycling Officials and invited guests only).<br>\n            9:00 PM: Spaghetti Dinner closes<br>\n            10:00 PM: Consumer Show, Finish Line Village, Registrations, and Packet Pickup Close<br>\n        </ion-card-content>\n      \n      </ion-card>\n      <ion-card>\n    \n          <ion-card-header>\n              THE HEAT IS ON! THE \'RIDE\' AND \'ROAD RACES\' BEGIN<br>\n              SATURDAY, AUGUST 25, 2018<br>\n              7:00 AM - 7:00 PM\n      \n          </ion-card-header>\n        \n          <ion-card-content>\n              5:00 AM: Breakfast offered by Spectra Food & Hospitality - lower level of the Coliseum.<br>\n              5:00 AM: Packet Pickup and Late Registration in the Exhibit Hall. (USA Cycling racers - no registration)<br>\n              5:30 AM: Morning Praise and Worship (3rd and Lamar)<br>\n              6:45 AM: First Bank - USA Cycling Road Races begin at Lincoln St and Burkburnett Rd.<br>\n              7:00 AM: Registration for the Ride closes<br>\n              7:05 AM: Flyover<br>\n              7:05 AM: Canon Blast and the official start of the Endurance ride for 100 miler riders, 100k,<br>\n              50mile, 25mile and 10k routes (Tandems & Recumbents start at 2nd Street)<br>\n              8:00 AM: Finish Line Village & Food Court opens at 2nd and Lamar<br>\n              9:00 AM: The Consumer Show Opens<br>\n              9:00 AM: Sports Massage at the Consumer Show opens<br>\n              10:15AM > 3:30 PM: Outdoor Concert at 2nd and Lamar. Bands: TBD<br>\n              11:00 AM: First Bank Road Races finish. Awards will be presented around 12 Noon (based on category completion time) on the Finish Line Village Concert Stage.<br>\n              4:00 PM: Consumer Show Closes<br>\n              5:00 PM: Finish Line Village & Outdoor Concert closes (7:00 PM: All activities close)<br>\n          </ion-card-content>\n        \n        </ion-card>\n        <ion-card>\n    \n            <ion-card-header>\n                WRAP UP THE TRIPLE THREAT<br>\n                SUNDAY, AUGUST 26, 2018<br>\n                7:00 AM - 10:00 AM\n        \n            </ion-card-header>\n          \n            <ion-card-content>\n                7:00AM: Wee-Chi-Tah Off-Road Trail Run, 10k, and Half Marathon Distances.<br>\n    7:00AM: Criterium Races for USAC licensed racers begin in front of the Multi Purpose Events Center<br>\n    \n    \n            </ion-card-content>\n          \n          </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/schedule/schedule.html"*/,
+            selector: 'page-schedule',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/schedule/schedule.html"*/'<!--\n  Generated template for the SchedulePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Schedule</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <h1>FIRST DAY OF 2018 HHH ACTIVITIES</h1>\n    <h2>THURSDAY, AUGUST 23, 2018</h2>\n    \n    <ion-card>\n        <ion-card-header>\n            3:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            The Consumer Show opens in the Exhibit Hall of the Multi-Purpose Events Center.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            3:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Sports Massage at MPEC\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            4:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Packet Pickup and late registration open at the Exhibit Hall.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            4:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            USA Cycling race registration begins in the Exhibit Hall.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            4:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Wee-Chi-Tah Off-Road events registration begins at the Exhibit Hall.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            8:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            All Activities close.\n        </ion-card-content>\n    </ion-card>\n    \n    <h1>THE CELEBRATION BEGINS</h1>\n    <h2>FRIDAY, AUGUST 24, 2018</h2>\n    <ion-card>\n        <ion-card-header>\n            9:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Wee-Chi-Tah Off-Road Trail Run registration opens - Bridwell Ag Center.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            10:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Wee-Chi-Tah Off-Road Mountain Bike Trail Races begin – Bridwell Ag Center.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            1:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Consumer Show begins.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            1:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Sports Massage at MPEC. Loosen up for the day ahead.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            2:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Packet Pickup and late registration open in the Exhibit Hall for Ride and Race participants.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            3:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Finish Line Village Opens.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            5:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Criterium for USA Cycling racers begins at the Finish Line Village.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            5:00 PM - 7:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Great races to watch from MPEC parking & East steps of the Coliseum.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            5:30 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Spaghetti Dinner Begins in the lower level of the Coliseum.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            7:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Start Smart/Ride Smart “How to have a successful ride at the HHH” Presented by Bikin’ Mike Keel – Author of “Train Smart” - MPEC Seminar Room\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            8:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            HHH Pace Group Meeting - MPEC Seminar Room\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            8:45 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Race Official’s Meeting – HHH Bldg – 104 Scott St. (USA Cycling Officials and invited guests only).\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            9:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Spaghetti Dinner closes.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            10:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Consumer Show, Finish Line Village, Registrations, and Packet Pickup Close.\n        </ion-card-content>\n    </ion-card>\n    <h1>THE HEAT IS ON! THE \'RIDE\' AND \'ROAD RACES\' BEGIN</h1>\n    <h2>SATURDAY, AUGUST 25, 2018</h2>\n    <ion-card>\n        <ion-card-header>\n            5:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Breakfast offered by Spectra Food & Hospitality - lower level of the Coliseum.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            5:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Packet Pickup and Late Registration in the Exhibit Hall. (USA Cycling racers - no registration)\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            5:30 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Morning Praise and Worship (3rd and Lamar)\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            6:45 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            First Bank - USA Cycling Road Races begin at Lincoln St and Burkburnett Rd.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            7:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Registration for the Ride closes.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            7:05 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Flyover\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            7:05 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Cannon Blast and the official start of the Endurance ride for 100 miler riders, 100k, 50mile, 25mile and 10k routes (Tandems & Recumbents start at 2nd Street)\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            8:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Finish Line Village & Food Court opens at 2nd and Lamar.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            9:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            The Consumer Show Opens.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            9:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Sports Massage at the Consumer Show opens.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            10:15 AM - 3:30 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Outdoor Concert at 2nd and Lamar. Bands: TBD\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            11:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            First Bank Road Races finish. Awards will be presented around 12 Noon (based on category completion time) on the Finish Line Village Concert Stage.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            4:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Consumer Show Closes.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            5:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Finish Line Village & Outdoor Concert closes \n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            7:00 PM\n        </ion-card-header>\n        \n        <ion-card-content>\n           All activities close.\n        </ion-card-content>\n    </ion-card>\n    <h1>WRAP UP THE TRIPLE THREAT</h1>\n    <h2>SUNDAY, AUGUST 26, 2018</h2>\n    <ion-card>\n        <ion-card-header>\n            7:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Wee-Chi-Tah Off-Road Trail Run, 10k, and Half Marathon Distances.\n        </ion-card-content>\n    </ion-card>\n    <ion-card>\n        <ion-card-header>\n            7:00 AM\n        </ion-card-header>\n        \n        <ion-card-content>\n            Criterium Races for USAC licensed racers begin in front of the Multi Purpose Events Center\n        </ion-card-content>\n    </ion-card>\n    \n</ion-content>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/schedule/schedule.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], SchedulePage);
     return SchedulePage;
 }());
@@ -135,7 +135,52 @@ var SchedulePage = (function () {
 
 /***/ }),
 
-/***/ 154:
+/***/ 145:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the MapPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MapPage = (function () {
+    function MapPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    MapPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MapPage');
+    };
+    MapPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-map',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/map/map.html"*/'<!--\n  Generated template for the MapPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Map</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-grid>\n      <ion-row justify-content-between text-center>\n        <ion-col>70</ion-col>\n        <ion-col>NE</ion-col>\n        <ion-col>5 mph</ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/map/map.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], MapPage);
+    return MapPage;
+}());
+
+//# sourceMappingURL=map.js.map
+
+/***/ }),
+
+/***/ 155:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -148,29 +193,41 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 154;
+webpackEmptyAsyncContext.id = 155;
 
 /***/ }),
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/attractions/attractions.module": [
 		446,
-		3
+		14
 	],
 	"../pages/followrider/followrider.module": [
 		447,
-		2
+		13
 	],
 	"../pages/map/map.module": [
-		448,
-		1
+		449,
+		10
 	],
 	"../pages/schedule/schedule.module": [
-		449,
-		0
+		448,
+		9
+	],
+	"../pages/settings-location/settings-location.module": [
+		452,
+		8
+	],
+	"../pages/settings-number/settings-number.module": [
+		450,
+		7
+	],
+	"../pages/settings-route/settings-route.module": [
+		454,
+		6
 	]
 };
 function webpackAsyncContext(req) {
@@ -184,12 +241,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 195;
+webpackAsyncContext.id = 196;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 281:
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -197,11 +254,11 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__schedule_schedule__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__map_map__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__map_map__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__attractions_attractions__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_settings__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_settings__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_auth__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__followrider_followrider__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__followrider_followrider__ = __webpack_require__(143);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -250,9 +307,9 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Hotter\'n Hell Hundred\n    </ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only clear (click)="onGoToSettings()">\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <button ion-button block (click)="onGoToMap()" *ngIf="isAuthenticated">MAP</button>\n    <button ion-button block (click)="onGoToFollowRider()" *ngIf="!isAuthenticated">FOLLOW RIDER</button>\n  </p>\n  <p>\n    <button ion-button block (click)="onGoToSchedule()">SCHEDULE OF EVENTS</button>\n  </p>\n  <p>\n    <button ion-button block (click)="onGoToAttractions()">ATTRACTIONS</button>\n  </p>\n  <p>\n    <button ion-button block outline>93 DAYS | 17 HRS | 32 MIN | 18 SEC</button>\n  </p>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Hotter\'n Hell Hundred\n    </ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only clear (click)="onGoToSettings()">\n        <ion-icon name="more"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row justify-content-between text-center>\n        <ion-col>\n  <img src="assets/imgs/logo.png" alt="Hotter n\' Hell Logo"/>\n\n</ion-col>\n</ion-row>\n</ion-grid>\n\n  <p>\n    <button ion-button block (click)="onGoToMap()" *ngIf="isAuthenticated">MAP</button>\n    <button ion-button block (click)="onGoToFollowRider()" *ngIf="!isAuthenticated">FOLLOW RIDER</button>\n  </p>\n  <p>\n    <button ion-button block (click)="onGoToSchedule()">SCHEDULE OF EVENTS</button>\n  </p>\n  <p>\n    <button ion-button block (click)="onGoToAttractions()">ATTRACTIONS</button>\n  </p>\n  <p>\n    <button ion-button block outline>93 DAYS | 17 HRS | 32 MIN | 18 SEC</button>\n  </p>\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-grid>\n      <ion-row justify-content-between text-center>\n        <ion-col>70</ion-col>\n        <ion-col>NE</ion-col>\n        <ion-col>5 mph</ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_6__services_auth__["a" /* AuthService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_6__services_auth__["a" /* AuthService */]])
     ], HomePage);
     return HomePage;
 }());
@@ -261,16 +318,19 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 282:
+/***/ 283:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signin_signin__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signin_signin__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_auth__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_number_settings_number__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__settings_route_settings_route__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__settings_location_settings_location__ = __webpack_require__(453);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -285,10 +345,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
+
 var SettingsPage = (function () {
-    function SettingsPage(navCtrl, authService) {
+    function SettingsPage(navCtrl, authService, modalCtrl) {
         this.navCtrl = navCtrl;
         this.authService = authService;
+        this.modalCtrl = modalCtrl;
         this.isAuthenticated = false;
     }
     SettingsPage.prototype.ionViewWillEnter = function () {
@@ -298,6 +363,18 @@ var SettingsPage = (function () {
         else {
             this.isAuthenticated = false;
         }
+    };
+    SettingsPage.prototype.changeRiderNumber = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_5__settings_number_settings_number__["a" /* SettingsNumberPage */]);
+        modal.present();
+    };
+    SettingsPage.prototype.changeRoute = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_6__settings_route_settings_route__["a" /* SettingsRoutePage */]);
+        modal.present();
+    };
+    SettingsPage.prototype.changeLocation = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_7__settings_location_settings_location__["a" /* SettingsLocationPage */]);
+        modal.present();
     };
     SettingsPage.prototype.onGoToSignUp = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__signup_signup__["a" /* SignupPage */]);
@@ -311,18 +388,19 @@ var SettingsPage = (function () {
     };
     SettingsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-settings',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Settings</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n    <button ion-button block (click)="onGoToSignUp()" *ngIf="!isAuthenticated">\n      Sign Up\n    </button>\n    <button ion-button block outline (click)="onGoToSignIn()" *ngIf="!isAuthenticated">\n      Sign In\n    </button>\n    <button ion-button block (click)="onSignOut()" *ngIf="isAuthenticated">\n      Sign Out\n    </button>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/,
+            selector: 'page-settings',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Settings</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <ion-list no-lines>\n    <button ion-item (click)="changeRiderNumber()">\n      Rider Number\n      <ion-badge item-end>296</ion-badge>\n    </button>\n    <button ion-item (click)="changeRoute()">\n      <ion-label>Route</ion-label>\n      <ion-badge item-end>100 K</ion-badge>>\n    </button>\n    <button ion-item (click)="changeLocation()">\n      <ion-label>Location</ion-label>\n      <ion-checkbox checked="true" disabled="true" item-end></ion-checkbox>\n    </button>\n  </ion-list>\n\n  <button ion-button block (click)="onGoToSignUp()" *ngIf="!isAuthenticated">\n    Sign Up\n  </button>\n  <button ion-button block outline (click)="onGoToSignIn()" *ngIf="!isAuthenticated">\n    Sign In\n  </button>\n  <button ion-button block (click)="onSignOut()" *ngIf="isAuthenticated">\n    Sign Out\n  </button>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__services_auth__["a" /* AuthService */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__services_auth__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_auth__["a" /* AuthService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]) === "function" && _c || Object])
     ], SettingsPage);
     return SettingsPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=settings.js.map
 
 /***/ }),
 
-/***/ 283:
+/***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -375,7 +453,7 @@ var SignupPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-signup',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/signup/signup.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Sign Up</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #f="ngForm" (ngSubmit)="onSignUp(f)">\n    <ion-list>\n      <ion-item>\n        <ion-label fixed>Email</ion-label>\n        <ion-input type="email" ngModel name="email" required></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>Password</ion-label>\n        <ion-input type="password" ngModel name="password" required [minlength]="6"></ion-input>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit" [disabled]="!f.valid">Sign Up</button>\n  </form>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/signup/signup.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__services_auth__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__services_auth__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
     ], SignupPage);
     return SignupPage;
 }());
@@ -384,7 +462,7 @@ var SignupPage = (function () {
 
 /***/ }),
 
-/***/ 284:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -437,57 +515,12 @@ var SigninPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-signin',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/signin/signin.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Sign In</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form #f="ngForm" (ngSubmit)="onSignIn(f)">\n    <ion-list>\n      <ion-item>\n        <ion-label fixed>Email</ion-label>\n        <ion-input type="email" ngModel name="email" required></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>Password</ion-label>\n        <ion-input type="password" ngModel name="password" required></ion-input>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit" [disabled]="!f.valid">Sign In</button>\n  </form>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/signin/signin.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__services_auth__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__services_auth__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
     ], SigninPage);
     return SigninPage;
 }());
 
 //# sourceMappingURL=signin.js.map
-
-/***/ }),
-
-/***/ 285:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FollowriderPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the FollowriderPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var FollowriderPage = (function () {
-    function FollowriderPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    FollowriderPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad FollowriderPage');
-    };
-    FollowriderPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-followrider',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/followrider/followrider.html"*/'<!--\n  Generated template for the FollowriderPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>FOLLOW RIDER</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/followrider/followrider.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], FollowriderPage);
-    return FollowriderPage;
-}());
-
-//# sourceMappingURL=followrider.js.map
 
 /***/ }),
 
@@ -513,24 +546,30 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(282);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_schedule_schedule__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_map_map__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_map_map__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_attractions_attractions__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_signin_signin__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_signup_signup__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_signin_signin__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_signup_signup__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_followrider_followrider__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_followrider_followrider__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_settings_location_settings_location__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_settings_number_settings_number__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_settings_route_settings_route__ = __webpack_require__(455);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -560,7 +599,10 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__["a" /* SettingsPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_signin_signin__["a" /* SigninPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_signup_signup__["a" /* SignupPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_followrider_followrider__["a" /* FollowriderPage */]
+                __WEBPACK_IMPORTED_MODULE_14__pages_followrider_followrider__["a" /* FollowriderPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_settings_location_settings_location__["a" /* SettingsLocationPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_settings_number_settings_number__["a" /* SettingsNumberPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_settings_route_settings_route__["a" /* SettingsRoutePage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -568,8 +610,11 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/attractions/attractions.module#AttractionsPageModule', name: 'AttractionsPage', segment: 'attractions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/followrider/followrider.module#FollowriderPageModule', name: 'FollowriderPage', segment: 'followrider', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/schedule/schedule.module#SchedulePageModule', name: 'SchedulePage', segment: 'schedule', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/schedule/schedule.module#SchedulePageModule', name: 'SchedulePage', segment: 'schedule', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/settings-number/settings-number.module#SettingsNumberPageModule', name: 'SettingsNumberPage', segment: 'settings-number', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/settings-location/settings-location.module#SettingsLocationPageModule', name: 'SettingsLocationPage', segment: 'settings-location', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/settings-route/settings-route.module#SettingsRoutePageModule', name: 'SettingsRoutePage', segment: 'settings-route', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -583,7 +628,10 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__["a" /* SettingsPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_signin_signin__["a" /* SigninPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_signup_signup__["a" /* SignupPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_followrider_followrider__["a" /* FollowriderPage */]
+                __WEBPACK_IMPORTED_MODULE_14__pages_followrider_followrider__["a" /* FollowriderPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_settings_location_settings_location__["a" /* SettingsLocationPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_settings_number_settings_number__["a" /* SettingsNumberPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_settings_route_settings_route__["a" /* SettingsRoutePage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -607,11 +655,11 @@ var AppModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(238);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(282);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -644,7 +692,7 @@ var MyApp = (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -653,12 +701,147 @@ var MyApp = (function () {
 
 /***/ }),
 
+/***/ 451:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsNumberPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the SettingsNumberPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SettingsNumberPage = (function () {
+    function SettingsNumberPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    SettingsNumberPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SettingsNumberPage');
+    };
+    SettingsNumberPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-settings-number',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/'<!--\n  Generated template for the SettingsNumberPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>settings-number</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], SettingsNumberPage);
+    return SettingsNumberPage;
+}());
+
+//# sourceMappingURL=settings-number.js.map
+
+/***/ }),
+
+/***/ 453:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsLocationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the SettingsLocationPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SettingsLocationPage = (function () {
+    function SettingsLocationPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    SettingsLocationPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SettingsLocationPage');
+    };
+    SettingsLocationPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-settings-location',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-location/settings-location.html"*/'<!--\n  Generated template for the SettingsLocationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>settings-location</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-location/settings-location.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], SettingsLocationPage);
+    return SettingsLocationPage;
+}());
+
+//# sourceMappingURL=settings-location.js.map
+
+/***/ }),
+
+/***/ 455:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsRoutePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the SettingsRoutePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SettingsRoutePage = (function () {
+    function SettingsRoutePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    SettingsRoutePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SettingsRoutePage');
+    };
+    SettingsRoutePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-settings-route',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/'<!--\n  Generated template for the SettingsRoutePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>settings-route</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], SettingsRoutePage);
+    return SettingsRoutePage;
+}());
+
+//# sourceMappingURL=settings-route.js.map
+
+/***/ }),
+
 /***/ 60:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase__);
 
 var AuthService = (function () {

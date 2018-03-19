@@ -14,6 +14,9 @@ import { SigninPage } from '../pages/signin/signin';
 import { SignupPage } from '../pages/signup/signup';
 import { AuthService } from '../services/auth';
 import { FollowriderPage } from '../pages/followrider/followrider';
+import { SettingsLocationPage } from '../pages/settings-location/settings-location';
+import { SettingsNumberPage } from '../pages/settings-number/settings-number';
+import { SettingsRoutePage } from '../pages/settings-route/settings-route';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { FollowriderPage } from '../pages/followrider/followrider';
     SettingsPage,
     SigninPage,
     SignupPage,
-    FollowriderPage
+    FollowriderPage,
+    SettingsLocationPage,
+    SettingsNumberPage,
+    SettingsRoutePage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,10 @@ import { FollowriderPage } from '../pages/followrider/followrider';
     SettingsPage,
     SigninPage,
     SignupPage,
-    FollowriderPage
+    FollowriderPage,
+    SettingsLocationPage,
+    SettingsNumberPage,
+    SettingsRoutePage
   ],
   providers: [
     StatusBar,
