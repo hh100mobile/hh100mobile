@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list no-lines>
+  <ion-list no-lines *ngIf="isAuthenticated">
     <button ion-item (click)="changeRiderNumber()">
       Rider Number
       <ion-badge item-end>296</ion-badge>

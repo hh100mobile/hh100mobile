@@ -1,14 +1,9 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Hotter'n Hell Hundred
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only clear (click)="onGoToSettings()">
-        <ion-icon name="more"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-navbar>
+  <ion-buttons end>
+    <button ion-button icon-only clear (click)="onGoToSettings()">
+      <ion-icon name="more"></ion-icon>
+    </button>
+  </ion-buttons>
 </ion-header>
 
 
@@ -16,12 +11,12 @@
 <ion-content padding>
   <ion-grid>
     <ion-row justify-content-between text-center>
-        <ion-col>
-  <img src="assets/imgs/logo.png" alt="Hotter n' Hell Logo"/>
+      <ion-col>
+        <img src="assets/imgs/logo.png" alt="Hotter n' Hell Logo" />
 
-</ion-col>
-</ion-row>
-</ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
   <p>
     <button ion-button block (click)="onGoToMap()" *ngIf="isAuthenticated">MAP</button>

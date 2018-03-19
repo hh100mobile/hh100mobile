@@ -1,25 +1,17 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ViewController } from 'ionic-angular';
 
-/**
- * Generated class for the SettingsNumberPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-settings-number',
   templateUrl: 'settings-number.html',
 })
 export class SettingsNumberPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private viewCtrl: ViewController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SettingsNumberPage');
+  dismiss() {
+    this.viewCtrl.dismiss();
   }
 
 }
