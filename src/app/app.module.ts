@@ -14,6 +14,10 @@ import { SigninPage } from '../pages/signin/signin';
 import { SignupPage } from '../pages/signup/signup';
 import { AuthService } from '../services/auth';
 import { FollowriderPage } from '../pages/followrider/followrider';
+import { ShoppingPage } from '../pages/shopping/shopping';
+import { RestaurantsPage } from '../pages/restaurants/restaurants';
+import { VendorsPage } from '../pages/vendors/vendors';
+import { EntertainmentPage } from '../pages/entertainment/entertainment';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { FollowriderPage } from '../pages/followrider/followrider';
     SettingsPage,
     SigninPage,
     SignupPage,
-    FollowriderPage
+    FollowriderPage,
+	ShoppingPage,
+	EntertainmentPage,
+	VendorsPage,
+	RestaurantsPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +49,11 @@ import { FollowriderPage } from '../pages/followrider/followrider';
     SettingsPage,
     SigninPage,
     SignupPage,
-    FollowriderPage
+    FollowriderPage,
+	ShoppingPage,
+	EntertainmentPage,
+	VendorsPage,
+	RestaurantsPage
   ],
   providers: [
     StatusBar,
