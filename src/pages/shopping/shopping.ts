@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SettingsPage } from '../settings/settings';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -18,6 +19,10 @@ export class ShoppingPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+   onGoToSettings() {
+    this.navCtrl.push(SettingsPage);
+  }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad ShoppingPage');
   }

@@ -14,16 +14,13 @@ import { SigninPage } from '../pages/signin/signin';
 import { SignupPage } from '../pages/signup/signup';
 import { AuthService } from '../services/auth';
 import { FollowriderPage } from '../pages/followrider/followrider';
-<<<<<<< HEAD
 import { ShoppingPage } from '../pages/shopping/shopping';
 import { RestaurantsPage } from '../pages/restaurants/restaurants';
 import { VendorsPage } from '../pages/vendors/vendors';
 import { EntertainmentPage } from '../pages/entertainment/entertainment';
-=======
-import { SettingsLocationPage } from '../pages/settings-location/settings-location';
-import { SettingsNumberPage } from '../pages/settings-number/settings-number';
-import { SettingsRoutePage } from '../pages/settings-route/settings-route';
->>>>>>> 03bb267c82eae418dfa98bd23684463ec38bf75e
+//import { SettingsLocationPage } from '../pages/settings-location/settings-location';
+//import { SettingsNumberPage } from '../pages/settings-number/settings-number';
+//import { SettingsRoutePage } from '../pages/settings-route/settings-route';
 
 @NgModule({
   declarations: [
@@ -36,16 +33,13 @@ import { SettingsRoutePage } from '../pages/settings-route/settings-route';
     SigninPage,
     SignupPage,
     FollowriderPage,
-<<<<<<< HEAD
 	ShoppingPage,
 	EntertainmentPage,
 	VendorsPage,
 	RestaurantsPage
-=======
-    SettingsLocationPage,
-    SettingsNumberPage,
-    SettingsRoutePage
->>>>>>> 03bb267c82eae418dfa98bd23684463ec38bf75e
+    //SettingsLocationPage,
+    //SettingsNumberPage,
+    //SettingsRoutePage
   ],
   imports: [
     BrowserModule,
@@ -62,16 +56,13 @@ import { SettingsRoutePage } from '../pages/settings-route/settings-route';
     SigninPage,
     SignupPage,
     FollowriderPage,
-<<<<<<< HEAD
 	ShoppingPage,
 	EntertainmentPage,
 	VendorsPage,
 	RestaurantsPage
-=======
-    SettingsLocationPage,
-    SettingsNumberPage,
-    SettingsRoutePage
->>>>>>> 03bb267c82eae418dfa98bd23684463ec38bf75e
+    //SettingsLocationPage,
+    //SettingsNumberPage,
+    //SettingsRoutePage
   ],
   providers: [
     StatusBar,

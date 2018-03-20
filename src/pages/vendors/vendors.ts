@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { SettingsPage } from '../settings/settings';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
 
 /**
  * Generated class for the VendorsPage page.
@@ -18,4 +20,8 @@ export class VendorsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+   onGoToSettings() {
+    this.navCtrl.push(SettingsPage);
+  }
+  
 }
