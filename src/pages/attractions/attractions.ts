@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SettingsPage } from '../settings/settings';
 import { VendorsPage } from '../vendors/vendors';
 import { ShoppingPage } from '../shopping/shopping';
 import { RestaurantsPage } from '../restaurants/restaurants';
 import { EntertainmentPage } from '../entertainment/entertainment';
+import { HotelsPage } from '../hotels/hotels';
 
 @IonicPage()
 @Component({
@@ -15,13 +15,13 @@ export class AttractionsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  
-    onGoToSettings() {
-    this.navCtrl.push(SettingsPage);
-  }
 
   onGoToVendors() {
     this.navCtrl.push(VendorsPage);
+  }
+  
+  onGoToHotels() {
+	  this.navCtrl.push(HotelsPage);
   }
 
   onGoToShopping() {

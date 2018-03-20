@@ -18,9 +18,10 @@ import { ShoppingPage } from '../pages/shopping/shopping';
 import { RestaurantsPage } from '../pages/restaurants/restaurants';
 import { VendorsPage } from '../pages/vendors/vendors';
 import { EntertainmentPage } from '../pages/entertainment/entertainment';
-//import { SettingsLocationPage } from '../pages/settings-location/settings-location';
-//import { SettingsNumberPage } from '../pages/settings-number/settings-number';
-//import { SettingsRoutePage } from '../pages/settings-route/settings-route';
+import { SettingsLocationPage } from '../pages/settings-location/settings-location';
+import { SettingsNumberPage } from '../pages/settings-number/settings-number';
+import { SettingsRoutePage } from '../pages/settings-route/settings-route';
+import { HotelsPage } from '../pages/hotels/hotels'; 
 
 @NgModule({
   declarations: [
@@ -36,10 +37,11 @@ import { EntertainmentPage } from '../pages/entertainment/entertainment';
 	ShoppingPage,
 	EntertainmentPage,
 	VendorsPage,
-	RestaurantsPage
-    //SettingsLocationPage,
-    //SettingsNumberPage,
-    //SettingsRoutePage
+	RestaurantsPage,
+	HotelsPage,
+    SettingsLocationPage,
+    SettingsNumberPage,
+    SettingsRoutePage
   ],
   imports: [
     BrowserModule,
@@ -59,10 +61,11 @@ import { EntertainmentPage } from '../pages/entertainment/entertainment';
 	ShoppingPage,
 	EntertainmentPage,
 	VendorsPage,
-	RestaurantsPage
-    //SettingsLocationPage,
-    //SettingsNumberPage,
-    //SettingsRoutePage
+	RestaurantsPage,
+	HotelsPage,
+    SettingsLocationPage,
+    SettingsNumberPage,
+    SettingsRoutePage
   ],
   providers: [
     StatusBar,

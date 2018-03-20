@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SettingsPage } from '../settings/settings';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -17,10 +16,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class RestaurantsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-  
-   onGoToSettings() {
-    this.navCtrl.push(SettingsPage);
   }
 
   ionViewDidLoad() {

@@ -4,13 +4,6 @@
     <ion-title>
 		Attractions
 	</ion-title>
-	
-	<ion-buttons end>
-		<button ion-button icon-only clear (click)="onGoToSettings()">
-			<ion-icon name="options">
-			</ion-icon>
-		</button>
-	</ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -20,6 +13,12 @@
 		<button ion-button block icon-start (click)="onGoToVendors()">
 		<ion-icon name='people' is-active="false"></ion-icon>
 		VENDORS
+		</button>
+	</p>
+	<p>
+		<button ion-button block icon-start (click)="onGoToHotels()">
+		<ion-icon name='home' is-active="false"></ion-icon>
+		HOTELS
 		</button>
 	</p>
 	<p>
