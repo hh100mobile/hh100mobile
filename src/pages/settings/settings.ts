@@ -4,6 +4,11 @@ import { SignupPage } from '../signup/signup';
 import { SigninPage } from '../signin/signin';
 import { AuthService } from '../../services/auth';
 import firebase from 'firebase';
+import { ModalController } from 'ionic-angular';
+import { SettingsNumberPage } from '../settings-number/settings-number';
+import { SettingsRoutePage } from '../settings-route/settings-route';
+import { SettingsLocationPage } from '../settings-location/settings-location';
+
 
 @Component({
   selector: 'page-settings',
@@ -12,7 +17,7 @@ import firebase from 'firebase';
 export class SettingsPage {
   isAuthenticated = false;
 
-  constructor(public navCtrl: NavController, private authService: AuthService) {}
+  constructor(public navCtrl: NavController, private authService: AuthService, private modalCtrl: ModalController) {}
 
   ionViewWillEnter() {
     if (this.authService.getActiveUser()) {
@@ -20,6 +25,21 @@ export class SettingsPage {
     } else {
       this.isAuthenticated = false;
     }
+  }
+
+  changeRiderNumber() {
+    let modal = this.modalCtrl.create(SettingsNumberPage);
+    modal.present();
+  }
+
+  changeRoute() {
+    let modal = this.modalCtrl.create(SettingsRoutePage);
+    modal.present();
+  }
+
+  changeLocation() {
+    let modal = this.modalCtrl.create(SettingsLocationPage);
+    modal.present();
   }
 
   onGoToSignUp() {

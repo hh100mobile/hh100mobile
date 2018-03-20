@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Route</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <ion-list radio-group>
+      <ion-item>
+        <ion-label>100 Mile</ion-label>
+        <ion-radio checked="true" value="100-mile"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>75 Mile</ion-label>
+        <ion-radio checked="false" value="75-mile"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>50 Mile</ion-label>
+        <ion-radio checked="false" value="50-mile"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>25 Mile</ion-label>
+        <ion-radio checked="false" value="25-mile"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>100 Km</ion-label>
+        <ion-radio checked="false" value="100-km"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>10 Km</ion-label>
+        <ion-radio checked="false" value="10-km"></ion-radio>
+      </ion-item>
+    </ion-list>
+    <button ion-button block type="submit" disabled="true">Save</button>
+  </form>
+
+</ion-content>
