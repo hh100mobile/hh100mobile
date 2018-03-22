@@ -19,7 +19,7 @@
   </ion-grid>
 
 
-  <ion-card>
+  <ion-card *ngIf="onIsAuthenticated()">
 	<img src="assets/imgs/general-google-map.png" alt="map" />
 	<ion-card-content>
 		<ion-card-title>
@@ -27,12 +27,12 @@
 		</ion-card-title>
 			<p>
 			Check out the map and routes for one of the hottest bike races available!
-			<button ion-button block (click)="onGoToMap()" *ngIf="onIsAuthenticated()">MAP</button>
+			<button ion-button block (click)="onGoToMap()">MAP</button>
 			</p>
 	</ion-card-content>
    </ion-card>
 
-  <ion-card>
+  <ion-card *ngIf="!onIsAuthenticated()">
 	<img src="assets/imgs/biker.png" alt="rider" />
 	<ion-card-content>
 		<ion-card-title>
@@ -40,7 +40,7 @@
 		</ion-card-title>
 		   <p>
 			Follow your Family or Friend as they compete in the race.
-			<button ion-button block (click)="onGoToFollowRider()" *ngIf="!onIsAuthenticated()">FOLLOW RIDER</button>
+			<button ion-button block (click)="onGoToFollowRider()">FOLLOW RIDER</button>
 		   </p>
 	</ion-card-content>
   </ion-card>
