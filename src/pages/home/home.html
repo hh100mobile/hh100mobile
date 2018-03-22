@@ -18,7 +18,7 @@
     </ion-row>
   </ion-grid>
 
-  
+
   <ion-card>
 	<img src="assets/imgs/general-google-map.png" alt="map" />
 	<ion-card-content>
@@ -27,11 +27,11 @@
 		</ion-card-title>
 			<p>
 			Check out the map and routes for one of the hottest bike races available!
-			<button ion-button block (click)="onGoToMap()" *ngIf="isAuthenticated">MAP</button>
+			<button ion-button block (click)="onGoToMap()" *ngIf="onIsAuthenticated()">MAP</button>
 			</p>
 	</ion-card-content>
    </ion-card>
-   
+
   <ion-card>
 	<img src="assets/imgs/biker.png" alt="rider" />
 	<ion-card-content>
@@ -40,11 +40,11 @@
 		</ion-card-title>
 		   <p>
 			Follow your Family or Friend as they compete in the race.
-			<button ion-button block (click)="onGoToFollowRider()" *ngIf="!isAuthenticated">FOLLOW RIDER</button>
+			<button ion-button block (click)="onGoToFollowRider()" *ngIf="!onIsAuthenticated()">FOLLOW RIDER</button>
 		   </p>
 	</ion-card-content>
   </ion-card>
-	
+
   <p>
     <button ion-button block (click)="onGoToSchedule()">SCHEDULE OF EVENTS</button>
   </p>

@@ -25,6 +25,15 @@ export class HomePage {
     }
   }
 
+  onIsAuthenticated() {
+    if (this.authService.getActiveUser()) {
+      this.isAuthenticated = true;
+    } else {
+      this.isAuthenticated = false;
+    }
+    return this.isAuthenticated;
+  }
+
   onGoToSettings() {
     this.navCtrl.push(SettingsPage);
   }

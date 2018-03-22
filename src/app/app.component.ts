@@ -13,6 +13,10 @@ export class MyApp {
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     firebase.initializeApp({
+      //nash firebase
+      //apiKey: "AIzaSyDmoyHBk0bekmSUqW4qL9G7x2Gh9CvlA6w",
+      //authDomain: "hh100mobile-21dce.firebaseapp.com",
+
       apiKey: "AIzaSyDhQk9JWDz-RiT45tlKkzCTbkN5H8YU-FM",
       authDomain: "hh100-a8856.firebaseapp.com",
     });
