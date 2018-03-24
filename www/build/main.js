@@ -452,11 +452,11 @@ var map = {
 		6
 	],
 	"../pages/hotels/hotels.module": [
-		458,
+		457,
 		5
 	],
 	"../pages/map/map.module": [
-		457,
+		458,
 		4
 	],
 	"../pages/restaurants/restaurants.module": [
@@ -805,7 +805,7 @@ var SettingsNumberPage = (function () {
     };
     SettingsNumberPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-settings-number',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/'<ion-header>\n\n    <ion-navbar>\n      <ion-title>Rider Number</ion-title>\n      <ion-buttons start>\n        <button ion-button (click)="dismiss()">\n          <span ion-text color="primary" showWhen="ios">Cancel</span>\n          <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n  \n  </ion-header>\n  \n  \n  <ion-content padding>\n    <form #f="ngForm" (ngSubmit)="onSubmit(f)">\n      <ion-item>\n        <ion-label>Rider Number</ion-label>\n        <ion-input type="number" value="296" clearOnEdit="true" name="rider-number" required></ion-input>>\n      </ion-item>\n      <button ion-button block type="submit" disabled="true">Save</button>\n    </form>\n  </ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/,
+            selector: 'page-settings-number',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Rider Number</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #f="ngForm" (ngSubmit)="onSubmit(f)">\n    <ion-item>\n      <ion-label>Rider Number</ion-label>\n      <ion-input type="number" value="296" clearOnEdit="true" name="rider-number" required></ion-input>>\n    </ion-item>\n    <button ion-button block type="submit" disabled="true">Save</button>\n  </form>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
     ], SettingsNumberPage);
@@ -843,7 +843,7 @@ var SettingsRoutePage = (function () {
     };
     SettingsRoutePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-settings-route',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Route</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <form #f="ngForm" (ngSubmit)="onSubmit(f)">\n    <ion-list radio-group>\n      <ion-item>\n        <ion-label>100 Mile</ion-label>\n        <ion-radio checked="true" value="100-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>75 Mile</ion-label>\n        <ion-radio checked="false" value="75-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>50 Mile</ion-label>\n        <ion-radio checked="false" value="50-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>25 Mile</ion-label>\n        <ion-radio checked="false" value="25-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Km</ion-label>\n        <ion-radio checked="false" value="100-km"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>10 Km</ion-label>\n        <ion-radio checked="false" value="10-km"></ion-radio>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit" disabled="true">Save</button>\n  </form>\n\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/,
+            selector: 'page-settings-route',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Route</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <form #f="ngForm" (ngSubmit)="onSubmit(f)">\n    <ion-list radio-group>\n      <ion-item>\n        <ion-label>100 Mile</ion-label>\n        <ion-radio checked="true" value="100-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>75 Mile</ion-label>\n        <ion-radio checked="false" value="75-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>50 Mile</ion-label>\n        <ion-radio checked="false" value="50-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>25 Mile</ion-label>\n        <ion-radio checked="false" value="25-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Km</ion-label>\n        <ion-radio checked="false" value="100-km"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>10 Km</ion-label>\n        <ion-radio checked="false" value="10-km"></ion-radio>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit" disabled="true">Save</button>\n  </form>\n\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
     ], SettingsRoutePage);
@@ -881,7 +881,7 @@ var SettingsLocationPage = (function () {
     };
     SettingsLocationPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-settings-location',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-location/settings-location.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Location</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #f="ngForm" (ngSubmit)="onSubmit(f)">\n    <ion-item>\n      <ion-label>Allow Location</ion-label>\n      <ion-checkbox checked="true" name="allow-location"></ion-checkbox>\n    </ion-item>\n    <button ion-button block type="submit" disabled="true">Save</button>\n  </form>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-location/settings-location.html"*/,
+            selector: 'page-settings-location',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-location/settings-location.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Location</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #f="ngForm" (ngSubmit)="onSubmit(f)">\n    <ion-item>\n      <ion-label>Allow Location</ion-label>\n      <ion-checkbox checked="true" name="allow-location"></ion-checkbox>\n    </ion-item>\n    <button ion-button block type="submit" disabled="true">Save</button>\n  </form>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-location/settings-location.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
     ], SettingsLocationPage);
@@ -994,8 +994,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/attractions/attractions.module#AttractionsPageModule', name: 'AttractionsPage', segment: 'attractions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/entertainment/entertainment.module#EntertainmentPageModule', name: 'EntertainmentPage', segment: 'entertainment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/followrider/followrider.module#FollowriderPageModule', name: 'FollowriderPage', segment: 'followrider', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/hotels/hotels.module#HotelsPageModule', name: 'HotelsPage', segment: 'hotels', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/schedule/schedule.module#SchedulePageModule', name: 'SchedulePage', segment: 'schedule', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/shopping/shopping.module#ShoppingPageModule', name: 'ShoppingPage', segment: 'shopping', priority: 'low', defaultHistory: [] },
@@ -1089,10 +1089,9 @@ var MyApp = (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=app.component.js.map
