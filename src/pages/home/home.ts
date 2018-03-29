@@ -7,6 +7,9 @@ import { SettingsPage } from '../settings/settings';
 import { AuthService } from '../../services/auth';
 import { FollowriderPage } from '../followrider/followrider';
 import firebase from 'firebase';
+import {database} from 'firebase/database';
+
+
 
 @Component({
   selector: 'page-home',
@@ -14,8 +17,8 @@ import firebase from 'firebase';
 })
 export class HomePage {
   isAuthenticated = false;
-
-  constructor(public navCtrl: NavController, private authService: AuthService) {}
+  constructor(public navCtrl: NavController, private authService: AuthService) {
+  }
 
   ionViewWillEnter() {
     if (this.authService.getActiveUser()) {
@@ -55,3 +58,34 @@ export class HomePage {
   }
 
 }
+export class Weather {
+  temperature: string;
+  wind_dir: string;
+  wind_speed:string;
+  constructor(){
+    this.getTemperature();
+    this.getWind_Dir();
+    this.getWind_Speed();
+  }
+  private getTemperature() {
+    const weatherRef: firebase.database.Reference = firebase.database().ref(`/weather/temperature/`);
+weatherRef.on('value', weatherSnapshot => {
+this.temperature= weatherSnapshot.val();
+  }); 
+}
+private getWind_Dir() {
+  const weatherRef: firebase.database.Reference = firebase.database().ref(`/weather/wind-direction/`);
+weatherRef.on('value', weatherSnapshot => {
+this.wind_dir= weatherSnapshot.val();
+}); 
+}
+private getWind_Speed() {
+  const weatherRef: firebase.database.Reference = firebase.database().ref(`/weather/wind-speed/`);
+weatherRef.on('value', weatherSnapshot => {
+this.wind_speed= weatherSnapshot.val();
+console.log(this.wind_speed);
+console.log(5);
+}); 
+}
+}
+
