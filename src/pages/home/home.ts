@@ -17,7 +17,16 @@ import {database} from 'firebase/database';
 })
 export class HomePage {
   isAuthenticated = false;
+  temperature: string;
+  wind_dir: string;
+  wind_speed:string;
+
   constructor(public navCtrl: NavController, private authService: AuthService) {
+
+    this.getTemperature();
+    this.getWind_Dir();
+    this.getWind_Speed();
+
   }
 
   ionViewWillEnter() {
@@ -57,35 +66,24 @@ export class HomePage {
     this.navCtrl.push(AttractionsPage);
   }
 
-}
-export class Weather {
-  temperature: string;
-  wind_dir: string;
-  wind_speed:string;
-  constructor(){
-    this.getTemperature();
-    this.getWind_Dir();
-    this.getWind_Speed();
-  }
+
   private getTemperature() {
     const weatherRef: firebase.database.Reference = firebase.database().ref(`/weather/temperature/`);
-weatherRef.on('value', weatherSnapshot => {
-this.temperature= weatherSnapshot.val();
-  }); 
-}
-private getWind_Dir() {
-  const weatherRef: firebase.database.Reference = firebase.database().ref(`/weather/wind-direction/`);
-weatherRef.on('value', weatherSnapshot => {
-this.wind_dir= weatherSnapshot.val();
-}); 
-}
-private getWind_Speed() {
-  const weatherRef: firebase.database.Reference = firebase.database().ref(`/weather/wind-speed/`);
-weatherRef.on('value', weatherSnapshot => {
-this.wind_speed= weatherSnapshot.val();
-console.log(this.wind_speed);
-console.log(5);
-}); 
-}
+    weatherRef.on('value', weatherSnapshot => {
+      this.temperature= weatherSnapshot.val();
+    });
+  }
+  private getWind_Dir() {
+    const weatherRef: firebase.database.Reference = firebase.database().ref(`/weather/wind-direction/`);
+    weatherRef.on('value', weatherSnapshot => {
+      this.wind_dir= weatherSnapshot.val();
+    });
+  }
+  private getWind_Speed() {
+    const weatherRef: firebase.database.Reference = firebase.database().ref(`/weather/wind-speed/`);
+    weatherRef.on('value', weatherSnapshot => {
+      this.wind_speed= weatherSnapshot.val();
+    });
+  }
 }
 
