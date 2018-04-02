@@ -17,7 +17,7 @@
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
     <ion-item>
       <ion-label>Rider Number</ion-label>
-      <ion-input type="number" value="296" clearOnEdit="true" name="rider-number" required></ion-input>>
+      <ion-input type="number" value="{{ num }}" clearOnEdit="true" name="rider-number" required></ion-input>>
     </ion-item>
     <button ion-button block type="submit" disabled="true">Save</button>
   </form>

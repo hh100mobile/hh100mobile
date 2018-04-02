@@ -18,11 +18,11 @@ import { SettingsService } from '../../services/settings';
 })
 export class SettingsPage {
   isAuthenticated = false;
-  settings: Settings;
+  settings = new Settings(null, null, null);
 
   constructor(public navCtrl: NavController, private authService: AuthService, private modalCtrl: ModalController, private settingsService: SettingsService, private loadingCtrl: LoadingController, private alertCtrl: AlertController) {}
 
-  ionViewWillEnter() {
+  ionViewCanEnter() {
     if (this.authService.getActiveUser()) {
       this.isAuthenticated = true;
     } else {

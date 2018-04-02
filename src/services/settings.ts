@@ -26,6 +26,18 @@ export class SettingsService {
         console.log(this.settings.location);
     }
 
+    getNumber() {
+        return this.settings.num;
+    }
+
+    getRoute() {
+        return this.settings.route;
+    }
+
+    getAllowLocation() {
+        return this.settings.location;
+    }
+
     setNewSettings() {
         this.settings = new Settings(0, "none", false)
         console.log(this.settings);
