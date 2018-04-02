@@ -22,6 +22,8 @@ import { SettingsLocationPage } from '../pages/settings-location/settings-locati
 import { SettingsNumberPage } from '../pages/settings-number/settings-number';
 import { SettingsRoutePage } from '../pages/settings-route/settings-route';
 import { HotelsPage } from '../pages/hotels/hotels'; 
+import { SettingsService } from '../services/settings';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { HotelsPage } from '../pages/hotels/hotels';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -71,7 +74,8 @@ import { HotelsPage } from '../pages/hotels/hotels';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthService
+    AuthService,
+    SettingsService
   ]
 })
 export class AppModule {}

@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../services/auth';
+import { SettingsService } from '../../services/settings';
 import { LoadingController, AlertController, NavController } from 'ionic-angular';
 import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'page-signup',
@@ -9,7 +11,7 @@ import { NgForm } from '@angular/forms';
 })
 export class SignupPage {
 
-  constructor(public navCtrl: NavController, private authService: AuthService, private loadingCtrl: LoadingController, private alertCtrl: AlertController) {}
+  constructor(public navCtrl: NavController, private authService: AuthService, private settingsService: SettingsService, private loadingCtrl: LoadingController, private alertCtrl: AlertController) {}
 
   onSignUp(form: NgForm) {
     const loading = this.loadingCtrl.create({
@@ -18,6 +20,7 @@ export class SignupPage {
     loading.present();
     this.authService.signUp(form.value.email, form.value.password)
       .then(data => {
+        this.settingsService.setNewSettings();
         loading.dismiss();
         this.navCtrl.popToRoot();
       })
@@ -31,5 +34,14 @@ export class SignupPage {
         alert.present();
         this.navCtrl.pop();
       });
+  }
+
+  private handleError(errorMessage: string) {
+    const alert = this.alertCtrl.create({
+      title: 'An error occured!',
+      message: errorMessage,
+      buttons: ['Ok']
+    });
+    alert.present();
   }
 }

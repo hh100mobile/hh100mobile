@@ -18,8 +18,12 @@
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
     <ion-list radio-group>
       <ion-item>
+        <ion-label>None</ion-label>
+        <ion-radio checked="true" value="none"></ion-radio>
+      </ion-item>
+      <ion-item>
         <ion-label>100 Mile</ion-label>
-        <ion-radio checked="true" value="100-mile"></ion-radio>
+        <ion-radio checked="false" value="100-mile"></ion-radio>
       </ion-item>
       <ion-item>
         <ion-label>75 Mile</ion-label>
