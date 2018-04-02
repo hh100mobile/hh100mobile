@@ -10,7 +10,7 @@
   <ion-list no-lines *ngIf="isAuthenticated">
     <button ion-item (click)="changeRiderNumber()">
       Rider Number
-      <ion-badge item-end>296</ion-badge>
+      <ion-badge item-end>{{ settings.num }}</ion-badge>
     </button>
     <button ion-item (click)="changeRoute()">
       <ion-label>Route</ion-label>

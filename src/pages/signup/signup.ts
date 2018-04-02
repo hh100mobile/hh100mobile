@@ -21,7 +21,19 @@ export class SignupPage {
     this.authService.signUp(form.value.email, form.value.password)
       .then(data => {
         this.settingsService.setNewSettings();
-        loading.dismiss();
+        this.authService.getActiveUser().getIdToken()
+          .then(
+            (token: string) => {
+              this.settingsService.storeSettings(token)
+                .subscribe(
+                  () => loading.dismiss(),
+                  error => {
+                    loading.dismiss();
+                    this.handleError(error.json().error);
+                  }
+                )
+            }
+          );
         this.navCtrl.popToRoot();
       })
       .catch(error => {
