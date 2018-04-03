@@ -24,7 +24,7 @@ export class MyApp {
       //hh100 firebase
       apiKey: "AIzaSyB5fBejTe-iUZkGAQTkpjS3tG0d1N9-QSs",
       authDomain: "hh100-98a6c.firebaseapp.com",
-
+      databaseURL: "https://hh100-98a6c.firebaseio.com/"
 
     });
     platform.ready().then(() => {
