@@ -85,18 +85,18 @@ var SettingsService = (function () {
 
 /***/ }),
 
-/***/ 191:
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AttractionsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vendors_vendors__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shopping_shopping__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__restaurants_restaurants__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__entertainment_entertainment__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hotels_hotels__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vendors_vendors__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shopping_shopping__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__restaurants_restaurants__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__entertainment_entertainment__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hotels_hotels__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -146,7 +146,7 @@ var AttractionsPage = (function () {
 
 /***/ }),
 
-/***/ 192:
+/***/ 193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -188,7 +188,7 @@ var VendorsPage = (function () {
 
 /***/ }),
 
-/***/ 193:
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -233,7 +233,7 @@ var ShoppingPage = (function () {
 
 /***/ }),
 
-/***/ 194:
+/***/ 195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -278,7 +278,7 @@ var RestaurantsPage = (function () {
 
 /***/ }),
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -323,7 +323,7 @@ var EntertainmentPage = (function () {
 
 /***/ }),
 
-/***/ 196:
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -368,7 +368,7 @@ var HotelsPage = (function () {
 
 /***/ }),
 
-/***/ 197:
+/***/ 198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -413,7 +413,7 @@ var FollowriderPage = (function () {
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -458,7 +458,7 @@ var MapPage = (function () {
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -503,7 +503,7 @@ var SchedulePage = (function () {
 
 /***/ }),
 
-/***/ 212:
+/***/ 213:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -516,11 +516,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 212;
+webpackEmptyAsyncContext.id = 213;
 
 /***/ }),
 
-/***/ 257:
+/***/ 258:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -545,11 +545,11 @@ var map = {
 		4
 	],
 	"../pages/restaurants/restaurants.module": [
-		860,
+		859,
 		3
 	],
 	"../pages/schedule/schedule.module": [
-		859,
+		860,
 		2
 	],
 	"../pages/shopping/shopping.module": [
@@ -572,7 +572,7 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 257;
+webpackAsyncContext.id = 258;
 module.exports = webpackAsyncContext;
 
 /***/ }),
@@ -584,12 +584,14 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__schedule_schedule__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__map_map__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__attractions_attractions__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__schedule_schedule__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__map_map__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__attractions_attractions__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_settings__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_auth__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__followrider_followrider__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__followrider_followrider__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_firebase__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -607,11 +609,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var HomePage = (function () {
     function HomePage(navCtrl, authService) {
         this.navCtrl = navCtrl;
         this.authService = authService;
         this.isAuthenticated = false;
+        this.getTemperature();
+        this.getWind_Dir();
+        this.getWind_Speed();
     }
     HomePage.prototype.ionViewWillEnter = function () {
         if (this.authService.getActiveUser()) {
@@ -645,9 +651,30 @@ var HomePage = (function () {
     HomePage.prototype.onGoToAttractions = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__attractions_attractions__["a" /* AttractionsPage */]);
     };
+    HomePage.prototype.getTemperature = function () {
+        var _this = this;
+        var weatherRef = __WEBPACK_IMPORTED_MODULE_8_firebase___default.a.database().ref("/weather/temperature/");
+        weatherRef.on('value', function (weatherSnapshot) {
+            _this.temperature = weatherSnapshot.val();
+        });
+    };
+    HomePage.prototype.getWind_Dir = function () {
+        var _this = this;
+        var weatherRef = __WEBPACK_IMPORTED_MODULE_8_firebase___default.a.database().ref("/weather/wind-direction/");
+        weatherRef.on('value', function (weatherSnapshot) {
+            _this.wind_dir = weatherSnapshot.val();
+        });
+    };
+    HomePage.prototype.getWind_Speed = function () {
+        var _this = this;
+        var weatherRef = __WEBPACK_IMPORTED_MODULE_8_firebase___default.a.database().ref("/weather/wind-speed/");
+        weatherRef.on('value', function (weatherSnapshot) {
+            _this.wind_speed = weatherSnapshot.val();
+        });
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/home/home.html"*/'<ion-header>\n  <ion-buttons end>\n    <button ion-button icon-only clear (click)="onGoToSettings()">\n      <ion-icon name="more"></ion-icon>\n    </button>\n  </ion-buttons>\n</ion-header>\n\n\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row justify-content-between text-center>\n      <ion-col>\n        <img src="assets/imgs/logo.png" alt="Hotter n\' Hell Logo" />\n\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n  <ion-card *ngIf="onIsAuthenticated()">\n    <img src="assets/imgs/general-google-map.png" alt="map" />\n    <ion-card-content>\n      <button ion-button block (click)="onGoToMap()">MAP</button>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card *ngIf="!onIsAuthenticated()">\n    <img src="assets/imgs/biker.png" alt="rider" />\n    <ion-card-content>\n      <button ion-button block (click)="onGoToFollowRider()">FOLLOW RIDER</button>\n    </ion-card-content>\n  </ion-card>\n\n  <p>\n    <button ion-button block (click)="onGoToSchedule()">SCHEDULE OF EVENTS</button>\n  </p>\n  <p>\n    <button ion-button block (click)="onGoToAttractions()">ATTRACTIONS</button>\n  </p>\n  <p>\n    <button ion-button block outline>93 DAYS | 17 HRS | 32 MIN | 18 SEC</button>\n  </p>\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-grid>\n      <ion-row justify-content-between text-center>\n        <ion-col>70</ion-col>\n        <ion-col>NE</ion-col>\n        <ion-col>5 mph</ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/home/home.html"*/'<ion-header>\n  <ion-buttons end>\n    <button ion-button icon-only clear (click)="onGoToSettings()">\n      <ion-icon name="more"></ion-icon>\n    </button>\n  </ion-buttons>\n</ion-header>\n\n\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row justify-content-between text-center>\n      <ion-col>\n        <img src="assets/imgs/logo.png" alt="Hotter n\' Hell Logo" />\n\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n\n  <ion-card *ngIf="onIsAuthenticated()">\n    <img src="assets/imgs/general-google-map.png" alt="map" />\n    <ion-card-content>\n      <button ion-button block (click)="onGoToMap()">MAP</button>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card *ngIf="!onIsAuthenticated()">\n    <img src="assets/imgs/biker.png" alt="rider" />\n    <ion-card-content>\n      <button ion-button block (click)="onGoToFollowRider()">FOLLOW RIDER</button>\n    </ion-card-content>\n  </ion-card>\n\n  <p>\n    <button ion-button block (click)="onGoToSchedule()">SCHEDULE OF EVENTS</button>\n  </p>\n  <p>\n    <button ion-button block (click)="onGoToAttractions()">ATTRACTIONS</button>\n  </p>\n  <p>\n    <button ion-button block outline>93 DAYS | 17 HRS | 32 MIN | 18 SEC</button>\n  </p>\n</ion-content>\n<ion-footer>\n  <ion-toolbar>\n    <ion-grid>\n      <ion-row justify-content-between text-center>\n        <ion-col>{{temperature}}</ion-col>\n        <ion-col>{{wind_dir}}</ion-col>\n        <ion-col>{{wind_speed}}</ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_6__services_auth__["a" /* AuthService */]])
     ], HomePage);
@@ -1004,10 +1031,9 @@ var SettingsNumberPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-settings-number',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Rider Number</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #f="ngForm" (ngSubmit)="onSubmit(f)">\n    <ion-item>\n      <ion-label>Rider Number</ion-label>\n      <ion-input type="number" ngModel value="{{ num }}" name="riderNumber" required></ion-input>\n    </ion-item>\n    <button ion-button block type="submit" [disabled]="!f.valid">Save</button>\n  </form>\n</ion-content>\n\n<!-- <ion-content padding>\n  <form #f="ngForm" (ngSubmit)="onSignUp(f)">\n    <ion-list>\n      <ion-item>\n        <ion-label fixed>Email</ion-label>\n        <ion-input type="email" ngModel name="email" required></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>Password</ion-label>\n        <ion-input type="password" ngModel name="password" required [minlength]="6"></ion-input>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit" [disabled]="!f.valid">Sign Up</button>\n  </form>\n</ion-content> -->'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */]) === "function" && _f || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */], __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */]])
     ], SettingsNumberPage);
     return SettingsNumberPage;
-    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=settings-number.js.map
@@ -1112,26 +1138,26 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(297);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_schedule_schedule__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_map_map__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_attractions_attractions__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_schedule_schedule__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_map_map__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_attractions_attractions__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_signin_signin__ = __webpack_require__(439);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_signup_signup__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_followrider_followrider__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_shopping_shopping__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_restaurants_restaurants__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_vendors_vendors__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_entertainment_entertainment__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_followrider_followrider__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_shopping_shopping__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_restaurants_restaurants__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_vendors_vendors__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_entertainment_entertainment__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_settings_location_settings_location__ = __webpack_require__(442);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_settings_number_settings_number__ = __webpack_require__(440);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_settings_route_settings_route__ = __webpack_require__(441);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_hotels_hotels__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_hotels_hotels__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_settings__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__angular_http__ = __webpack_require__(348);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1198,8 +1224,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/followrider/followrider.module#FollowriderPageModule', name: 'FollowriderPage', segment: 'followrider', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/hotels/hotels.module#HotelsPageModule', name: 'HotelsPage', segment: 'hotels', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/schedule/schedule.module#SchedulePageModule', name: 'SchedulePage', segment: 'schedule', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/schedule/schedule.module#SchedulePageModule', name: 'SchedulePage', segment: 'schedule', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/shopping/shopping.module#ShoppingPageModule', name: 'ShoppingPage', segment: 'shopping', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/vendors/vendors.module#VendorsPageModule', name: 'VendorsPage', segment: 'vendors', priority: 'low', defaultHistory: [] }
                     ]
@@ -1249,9 +1275,9 @@ var AppModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(297);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(345);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1282,6 +1308,7 @@ var MyApp = (function () {
             //hh100 firebase
             apiKey: "AIzaSyB5fBejTe-iUZkGAQTkpjS3tG0d1N9-QSs",
             authDomain: "hh100-98a6c.firebaseapp.com",
+            databaseURL: "https://hh100-98a6c.firebaseio.com/"
         });
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
@@ -1307,7 +1334,7 @@ var MyApp = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase__);
 
 var AuthService = (function () {
