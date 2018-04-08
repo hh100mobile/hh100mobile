@@ -11,7 +11,6 @@ import { SettingsLocationPage } from '../settings-location/settings-location';
 import { Settings } from '../../models/settings';
 import { SettingsService } from '../../services/settings';
 
-
 @Component({
   selector: 'page-settings',
   templateUrl: 'settings.html',
@@ -20,7 +19,8 @@ export class SettingsPage {
   isAuthenticated = false;
   settings = new Settings(null, null, null);
 
-  constructor(public navCtrl: NavController, private authService: AuthService, private modalCtrl: ModalController, private settingsService: SettingsService, private loadingCtrl: LoadingController, private alertCtrl: AlertController) {}
+  constructor(public navCtrl: NavController, private authService: AuthService, private modalCtrl: ModalController, private settingsService: SettingsService, private loadingCtrl: LoadingController, private alertCtrl: AlertController) {
+  }
 
   ionViewCanEnter() {
     if (this.authService.getActiveUser()) {
@@ -29,27 +29,9 @@ export class SettingsPage {
       this.isAuthenticated = false;
     }
     if (this.isAuthenticated == true) {
-      const loading = this.loadingCtrl.create({
-        content: 'Loading'
-      });
-      loading.present();
-      this.authService.getActiveUser().getIdToken()
-          .then(
-            (token: string) => {
-              this.settingsService.fetchSettings(token)
-                .subscribe(
-                  (s: Settings) => {
-                    this.settings = s;
-                    console.log(this.settings);
-                    loading.dismiss();
-                  },
-                  error => {
-                    loading.dismiss();
-                    this.handleError(error.json().error);
-                  }
-                )
-            }
-          );
+      this.getNumber();
+      this.getRoute();
+      this.getAllowLocation();
     }
   }
 
@@ -81,13 +63,28 @@ export class SettingsPage {
     this.navCtrl.popToRoot();
   }
 
-  private handleError(errorMessage: string) {
-    const alert = this.alertCtrl.create({
-      title: 'An error occured!',
-      message: errorMessage,
-      buttons: ['Ok']
+  private getNumber() {
+    const numberRef: firebase.database.Reference = firebase.database().ref(`/users/` + this.authService.getActiveUser().uid + `/settings/num/`);
+    numberRef.on('value', numberSnapshot => {
+      this.settings.num = numberSnapshot.val();
+      this.settingsService.setNumber(this.settings.num);
     });
-    alert.present();
+  }
+
+  private getRoute() {
+    const routeRef: firebase.database.Reference = firebase.database().ref(`/users/` + this.authService.getActiveUser().uid + `/settings/route/`);
+    routeRef.on('value', routeSnapshot => {
+      this.settings.route = routeSnapshot.val();
+      this.settingsService.setRoute(this.settings.route);
+    });
+  }
+
+  private getAllowLocation() {
+    const locationRef: firebase.database.Reference = firebase.database().ref(`/users/` + this.authService.getActiveUser().uid + `/settings/location/`);
+    locationRef.on('value', locationSnapshot => {
+      this.settings.location = locationSnapshot.val();
+      this.settingsService.setAllowLocation(this.settings.location);
+    });
   }
 
 }

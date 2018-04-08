@@ -1,90 +1,5 @@
 webpackJsonp([9],{
 
-/***/ 104:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_settings__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__ = __webpack_require__(575);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var SettingsService = (function () {
-    function SettingsService(http, authService) {
-        this.http = http;
-        this.authService = authService;
-    }
-    SettingsService.prototype.setNumber = function (num) {
-        this.settings.num = num;
-        console.log(this.settings.num);
-    };
-    SettingsService.prototype.setRoute = function (route) {
-        this.settings.route = route;
-        console.log(this.settings.route);
-    };
-    SettingsService.prototype.setAllowLocation = function (location) {
-        this.settings.location = location;
-        console.log(this.settings.location);
-    };
-    SettingsService.prototype.getNumber = function () {
-        return this.settings.num;
-    };
-    SettingsService.prototype.getRoute = function () {
-        return this.settings.route;
-    };
-    SettingsService.prototype.getAllowLocation = function () {
-        return this.settings.location;
-    };
-    SettingsService.prototype.setNewSettings = function () {
-        this.settings = new __WEBPACK_IMPORTED_MODULE_3__models_settings__["a" /* Settings */](0, "none", false);
-        console.log(this.settings);
-    };
-    SettingsService.prototype.storeSettings = function (token) {
-        var userId = this.authService.getActiveUser().uid;
-        return this.http
-            .put('https://hh100-98a6c.firebaseio.com/' + userId + '/settings.json?auth=' + token, this.settings)
-            .map(function (response) {
-            return response.json();
-        });
-    };
-    SettingsService.prototype.fetchSettings = function (token) {
-        var _this = this;
-        var userId = this.authService.getActiveUser().uid;
-        return this.http.get('https://hh100-98a6c.firebaseio.com/' + userId + '/settings.json?auth=' + token)
-            .map(function (response) {
-            return response.json();
-        })
-            .do(function (data) {
-            _this.settings = data;
-        });
-    };
-    SettingsService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_2__auth__["a" /* AuthService */]])
-    ], SettingsService);
-    return SettingsService;
-}());
-
-//# sourceMappingURL=settings.js.map
-
-/***/ }),
-
 /***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -533,11 +448,11 @@ var map = {
 		7
 	],
 	"../pages/followrider/followrider.module": [
-		856,
+		857,
 		6
 	],
 	"../pages/hotels/hotels.module": [
-		857,
+		856,
 		5
 	],
 	"../pages/map/map.module": [
@@ -588,9 +503,9 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__map_map__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__attractions_attractions__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_settings__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_auth__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_auth__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__followrider_followrider__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_firebase__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_firebase__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -694,12 +609,14 @@ var HomePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signin_signin__ = __webpack_require__(439);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_auth__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_number_settings_number__ = __webpack_require__(440);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__settings_route_settings_route__ = __webpack_require__(441);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__settings_location_settings_location__ = __webpack_require__(442);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_settings__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_settings__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_auth__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__settings_number_settings_number__ = __webpack_require__(440);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__settings_route_settings_route__ = __webpack_require__(441);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__settings_location_settings_location__ = __webpack_require__(442);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_settings__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_settings__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -720,6 +637,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var SettingsPage = (function () {
     function SettingsPage(navCtrl, authService, modalCtrl, settingsService, loadingCtrl, alertCtrl) {
         this.navCtrl = navCtrl;
@@ -729,10 +647,9 @@ var SettingsPage = (function () {
         this.loadingCtrl = loadingCtrl;
         this.alertCtrl = alertCtrl;
         this.isAuthenticated = false;
-        this.settings = new __WEBPACK_IMPORTED_MODULE_8__models_settings__["a" /* Settings */](null, null, null);
+        this.settings = new __WEBPACK_IMPORTED_MODULE_9__models_settings__["a" /* Settings */](null, null, null);
     }
     SettingsPage.prototype.ionViewCanEnter = function () {
-        var _this = this;
         if (this.authService.getActiveUser()) {
             this.isAuthenticated = true;
         }
@@ -740,34 +657,21 @@ var SettingsPage = (function () {
             this.isAuthenticated = false;
         }
         if (this.isAuthenticated == true) {
-            var loading_1 = this.loadingCtrl.create({
-                content: 'Loading'
-            });
-            loading_1.present();
-            this.authService.getActiveUser().getIdToken()
-                .then(function (token) {
-                _this.settingsService.fetchSettings(token)
-                    .subscribe(function (s) {
-                    _this.settings = s;
-                    console.log(_this.settings);
-                    loading_1.dismiss();
-                }, function (error) {
-                    loading_1.dismiss();
-                    _this.handleError(error.json().error);
-                });
-            });
+            this.getNumber();
+            this.getRoute();
+            this.getAllowLocation();
         }
     };
     SettingsPage.prototype.changeRiderNumber = function () {
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_5__settings_number_settings_number__["a" /* SettingsNumberPage */]);
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_6__settings_number_settings_number__["a" /* SettingsNumberPage */]);
         modal.present();
     };
     SettingsPage.prototype.changeRoute = function () {
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_6__settings_route_settings_route__["a" /* SettingsRoutePage */]);
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_7__settings_route_settings_route__["a" /* SettingsRoutePage */]);
         modal.present();
     };
     SettingsPage.prototype.changeLocation = function () {
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_7__settings_location_settings_location__["a" /* SettingsLocationPage */]);
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_8__settings_location_settings_location__["a" /* SettingsLocationPage */]);
         modal.present();
     };
     SettingsPage.prototype.onGoToSignUp = function () {
@@ -780,19 +684,35 @@ var SettingsPage = (function () {
         this.authService.signOut();
         this.navCtrl.popToRoot();
     };
-    SettingsPage.prototype.handleError = function (errorMessage) {
-        var alert = this.alertCtrl.create({
-            title: 'An error occured!',
-            message: errorMessage,
-            buttons: ['Ok']
+    SettingsPage.prototype.getNumber = function () {
+        var _this = this;
+        var numberRef = __WEBPACK_IMPORTED_MODULE_5_firebase___default.a.database().ref("/users/" + this.authService.getActiveUser().uid + "/settings/num/");
+        numberRef.on('value', function (numberSnapshot) {
+            _this.settings.num = numberSnapshot.val();
+            _this.settingsService.setNumber(_this.settings.num);
         });
-        alert.present();
+    };
+    SettingsPage.prototype.getRoute = function () {
+        var _this = this;
+        var routeRef = __WEBPACK_IMPORTED_MODULE_5_firebase___default.a.database().ref("/users/" + this.authService.getActiveUser().uid + "/settings/route/");
+        routeRef.on('value', function (routeSnapshot) {
+            _this.settings.route = routeSnapshot.val();
+            _this.settingsService.setRoute(_this.settings.route);
+        });
+    };
+    SettingsPage.prototype.getAllowLocation = function () {
+        var _this = this;
+        var locationRef = __WEBPACK_IMPORTED_MODULE_5_firebase___default.a.database().ref("/users/" + this.authService.getActiveUser().uid + "/settings/location/");
+        locationRef.on('value', function (locationSnapshot) {
+            _this.settings.location = locationSnapshot.val();
+            _this.settingsService.setAllowLocation(_this.settings.location);
+        });
     };
     SettingsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-settings',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Settings</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <ion-list no-lines *ngIf="isAuthenticated">\n    <button ion-item (click)="changeRiderNumber()">\n      Rider Number\n      <ion-badge item-end>{{ settings.num }}</ion-badge>\n    </button>\n    <button ion-item (click)="changeRoute()">\n      <ion-label>Route</ion-label>\n      <ion-badge item-end>100 K</ion-badge>>\n    </button>\n    <button ion-item (click)="changeLocation()">\n      <ion-label>Location</ion-label>\n      <ion-checkbox checked="true" disabled="true" item-end></ion-checkbox>\n    </button>\n  </ion-list>\n\n  <button ion-button block (click)="onGoToSignUp()" *ngIf="!isAuthenticated">\n    Sign Up\n  </button>\n  <button ion-button block outline (click)="onGoToSignIn()" *ngIf="!isAuthenticated">\n    Sign In\n  </button>\n  <button ion-button block (click)="onSignOut()" *ngIf="isAuthenticated">\n    Sign Out\n  </button>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/,
+            selector: 'page-settings',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Settings</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <ion-list no-lines *ngIf="isAuthenticated">\n    <button ion-item (click)="changeRiderNumber()">\n      Rider Number\n      <ion-badge item-end>{{ settings.num }}</ion-badge>\n    </button>\n    <button ion-item (click)="changeRoute()">\n      <ion-label>Route</ion-label>\n      <ion-badge item-end>{{ settings.route }}</ion-badge>>\n    </button>\n    <button ion-item (click)="changeLocation()">\n      <ion-label>Location</ion-label>\n      <ion-checkbox checked="true" disabled="true" item-end></ion-checkbox>\n    </button>\n  </ion-list>\n\n  <button ion-button block (click)="onGoToSignUp()" *ngIf="!isAuthenticated">\n    Sign Up\n  </button>\n  <button ion-button block outline (click)="onGoToSignIn()" *ngIf="!isAuthenticated">\n    Sign In\n  </button>\n  <button ion-button block (click)="onSignOut()" *ngIf="isAuthenticated">\n    Sign Out\n  </button>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__services_auth__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */], __WEBPACK_IMPORTED_MODULE_9__services_settings__["a" /* SettingsService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__services_auth__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */], __WEBPACK_IMPORTED_MODULE_10__services_settings__["a" /* SettingsService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], SettingsPage);
     return SettingsPage;
 }());
@@ -807,8 +727,8 @@ var SettingsPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_settings__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_settings__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -906,7 +826,7 @@ var Settings = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SigninPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -969,8 +889,8 @@ var SigninPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsNumberPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_settings__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_auth__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_settings__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_auth__ = __webpack_require__(48);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1047,6 +967,8 @@ var SettingsNumberPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsRoutePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_settings__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_auth__ = __webpack_require__(48);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1058,18 +980,61 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var SettingsRoutePage = (function () {
-    function SettingsRoutePage(viewCtrl) {
+    function SettingsRoutePage(viewCtrl, navCtrl, loadingCtrl, alertCtrl, settingsService, authService) {
         this.viewCtrl = viewCtrl;
+        this.navCtrl = navCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.alertCtrl = alertCtrl;
+        this.settingsService = settingsService;
+        this.authService = authService;
     }
+    SettingsRoutePage.prototype.ionViewWillEnter = function () {
+        this.route = this.settingsService.getRoute();
+    };
     SettingsRoutePage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    SettingsRoutePage.prototype.onSubmit = function (form) {
+        console.log(form);
+        // const loading = this.loadingCtrl.create({
+        //   content: 'Saving'
+        // });
+        // loading.present();
+        // this.route = form.value.route;
+        // this.settingsService.setRoute(this.route);
+        // this.authService.getActiveUser().getIdToken()
+        //   .then(
+        //     (token: string) => {
+        //       this.settingsService.storeSettings(token)
+        //         .subscribe(
+        //           () => {
+        //             loading.dismiss();
+        //             this.dismiss();
+        //           },
+        //           error => {
+        //             loading.dismiss();
+        //             this.handleError(error.json().error);
+        //           }
+        //         )
+        //     }
+        //   );
+    };
+    SettingsRoutePage.prototype.handleError = function (errorMessage) {
+        var alert = this.alertCtrl.create({
+            title: 'An error occured!',
+            message: errorMessage,
+            buttons: ['Ok']
+        });
+        alert.present();
+    };
     SettingsRoutePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-settings-route',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Route</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <form #f="ngForm" (ngSubmit)="onSubmit(f)">\n    <ion-list radio-group>\n      <ion-item>\n        <ion-label>None</ion-label>\n        <ion-radio checked="true" value="none"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Mile</ion-label>\n        <ion-radio checked="false" value="100-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>75 Mile</ion-label>\n        <ion-radio checked="false" value="75-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>50 Mile</ion-label>\n        <ion-radio checked="false" value="50-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>25 Mile</ion-label>\n        <ion-radio checked="false" value="25-mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Km</ion-label>\n        <ion-radio checked="false" value="100-km"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>10 Km</ion-label>\n        <ion-radio checked="false" value="10-km"></ion-radio>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit" disabled="true">Save</button>\n  </form>\n\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/,
+            selector: 'page-settings-route',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Route</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <form #f="ngForm" (ngSubmit)="onSubmit(form.route)">\n    <ion-list radio-group>\n      <ion-item>\n        <ion-label>None</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'None\'" value="None"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'100-Mile\'" value="100-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>75 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'75-Mile\'" value="75-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>50 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'50-Mile\'" value="50-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>25 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'25-Mile\'" value="25-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Km</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'100-Km\'" value="100-Km"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>10 Km</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'10-Km\'" value="10-Km"></ion-radio>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit">Save</button>\n  </form>\n\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */], __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */]])
     ], SettingsRoutePage);
     return SettingsRoutePage;
 }());
@@ -1135,7 +1100,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(298);
@@ -1148,7 +1113,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_signin_signin__ = __webpack_require__(439);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_signup_signup__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_followrider_followrider__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_shopping_shopping__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_restaurants_restaurants__ = __webpack_require__(195);
@@ -1158,7 +1123,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_settings_number_settings_number__ = __webpack_require__(440);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_settings_route_settings_route__ = __webpack_require__(441);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_hotels_hotels__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_settings__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_settings__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__angular_http__ = __webpack_require__(348);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1221,8 +1186,8 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/attractions/attractions.module#AttractionsPageModule', name: 'AttractionsPage', segment: 'attractions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/entertainment/entertainment.module#EntertainmentPageModule', name: 'EntertainmentPage', segment: 'entertainment', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/followrider/followrider.module#FollowriderPageModule', name: 'FollowriderPage', segment: 'followrider', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/hotels/hotels.module#HotelsPageModule', name: 'HotelsPage', segment: 'hotels', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/followrider/followrider.module#FollowriderPageModule', name: 'FollowriderPage', segment: 'followrider', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/schedule/schedule.module#SchedulePageModule', name: 'SchedulePage', segment: 'schedule', priority: 'low', defaultHistory: [] },
@@ -1268,6 +1233,36 @@ var AppModule = (function () {
 
 /***/ }),
 
+/***/ 48:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase__);
+
+var AuthService = (function () {
+    function AuthService() {
+    }
+    AuthService.prototype.signUp = function (email, password) {
+        return __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().createUserWithEmailAndPassword(email, password);
+    };
+    AuthService.prototype.signIn = function (email, password) {
+        return __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().signInWithEmailAndPassword(email, password);
+    };
+    AuthService.prototype.signOut = function () {
+        __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().signOut();
+    };
+    AuthService.prototype.getActiveUser = function () {
+        return __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().currentUser;
+    };
+    return AuthService;
+}());
+
+//# sourceMappingURL=auth.js.map
+
+/***/ }),
+
 /***/ 491:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1277,7 +1272,7 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(345);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1329,33 +1324,89 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 56:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_settings__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__ = __webpack_require__(575);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
-var AuthService = (function () {
-    function AuthService() {
+
+
+
+
+var SettingsService = (function () {
+    function SettingsService(http, authService) {
+        this.http = http;
+        this.authService = authService;
+        this.settings = new __WEBPACK_IMPORTED_MODULE_3__models_settings__["a" /* Settings */](null, null, null);
     }
-    AuthService.prototype.signUp = function (email, password) {
-        return __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().createUserWithEmailAndPassword(email, password);
+    SettingsService.prototype.setNumber = function (num) {
+        this.settings.num = num;
+        console.log(this.settings.num);
     };
-    AuthService.prototype.signIn = function (email, password) {
-        return __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().signInWithEmailAndPassword(email, password);
+    SettingsService.prototype.setRoute = function (route) {
+        this.settings.route = route;
+        console.log(this.settings.route);
     };
-    AuthService.prototype.signOut = function () {
-        __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().signOut();
+    SettingsService.prototype.setAllowLocation = function (location) {
+        this.settings.location = location;
+        console.log(this.settings.location);
     };
-    AuthService.prototype.getActiveUser = function () {
-        return __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().currentUser;
+    SettingsService.prototype.getNumber = function () {
+        return this.settings.num;
     };
-    return AuthService;
+    SettingsService.prototype.getRoute = function () {
+        return this.settings.route;
+    };
+    SettingsService.prototype.getAllowLocation = function () {
+        return this.settings.location;
+    };
+    SettingsService.prototype.setNewSettings = function () {
+        this.settings = new __WEBPACK_IMPORTED_MODULE_3__models_settings__["a" /* Settings */](0, "None", false);
+        console.log(this.settings);
+    };
+    SettingsService.prototype.storeSettings = function (token) {
+        var userId = this.authService.getActiveUser().uid;
+        return this.http
+            .put('https://hh100-98a6c.firebaseio.com/users/' + userId + '/settings.json?auth=' + token, this.settings)
+            .map(function (response) {
+            return response.json();
+        });
+    };
+    SettingsService.prototype.fetchSettings = function (token) {
+        var _this = this;
+        var userId = this.authService.getActiveUser().uid;
+        return this.http.get('https://hh100-98a6c.firebaseio.com/users/' + userId + '/settings.json?auth=' + token)
+            .map(function (response) {
+            return response.json();
+        })
+            .do(function (data) {
+            _this.settings = data;
+        });
+    };
+    SettingsService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_2__auth__["a" /* AuthService */]])
+    ], SettingsService);
+    return SettingsService;
 }());
 
-//# sourceMappingURL=auth.js.map
+//# sourceMappingURL=settings.js.map
 
 /***/ })
 

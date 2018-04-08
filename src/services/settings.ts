@@ -7,7 +7,7 @@ import 'rxjs/Rx';
 @Injectable()
 export class SettingsService {
 
-    private settings : Settings;
+    settings = new Settings(null, null, null);
 
     constructor(private http: Http, private authService: AuthService) {}
 
@@ -39,14 +39,14 @@ export class SettingsService {
     }
 
     setNewSettings() {
-        this.settings = new Settings(0, "none", false)
+        this.settings = new Settings(0, "None", false)
         console.log(this.settings);
     }
 
     storeSettings(token: string) {
         const userId = this.authService.getActiveUser().uid;
         return this.http
-            .put('https://hh100-98a6c.firebaseio.com/' + userId + '/settings.json?auth=' + token, this.settings)
+            .put('https://hh100-98a6c.firebaseio.com/users/' + userId + '/settings.json?auth=' + token, this.settings)
             .map((response: Response) => {
                 return response.json();
             });
@@ -54,7 +54,7 @@ export class SettingsService {
 
     fetchSettings(token: string) {
         const userId = this.authService.getActiveUser().uid;
-        return this.http.get('https://hh100-98a6c.firebaseio.com/' + userId + '/settings.json?auth=' + token)
+        return this.http.get('https://hh100-98a6c.firebaseio.com/users/' + userId + '/settings.json?auth=' + token)
             .map((response: Response) => {
                 return response.json();
             })
