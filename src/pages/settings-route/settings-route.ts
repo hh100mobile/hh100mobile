@@ -1,28 +1,34 @@
 import { Component } from '@angular/core';
 import { ViewController, NavController, LoadingController, AlertController } from 'ionic-angular';
 import { SettingsService } from '../../services/settings';
-import { NgForm } from '@angular/forms';
+import {FormGroup, NgForm} from '@angular/forms';
 import { AuthService } from '../../services/auth';
+import firebase from 'firebase';
 
 @Component({
   selector: 'page-settings-route',
   templateUrl: 'settings-route.html',
 })
 export class SettingsRoutePage {
-  route: string;
+  form = {};
+  routes = [];
 
-  constructor(private viewCtrl: ViewController, private navCtrl: NavController, private loadingCtrl: LoadingController, private alertCtrl: AlertController, private settingsService: SettingsService, private authService: AuthService){
+
+  constructor(private viewCtrl: ViewController, private navCtrl: NavController, private loadingCtrl: LoadingController,
+              private alertCtrl: AlertController, private settingsService: SettingsService,
+              private authService: AuthService){
+    this.getRoutes();
   }
 
   ionViewWillEnter() {
-    this.route = this.settingsService.getRoute();
+    this.form.route = this.settingsService.getRoute();
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
   }
 
-  onSubmit(form: NgForm) {
+  onSubmit(form) {
     console.log(form);
     // const loading = this.loadingCtrl.create({
     //   content: 'Saving'
@@ -46,6 +52,17 @@ export class SettingsRoutePage {
     //         )
     //     }
     //   );
+  }
+
+  //create a list of routes to display
+  private getRoutes() {
+    const routeRef: firebase.database.Reference = firebase.database().ref(`/settings/routes/`);
+    routeRef.on('value', routeSnapshot => {
+      routeSnapshot.forEach( itemSnap => {
+        this.routes.push(itemSnap.val());
+      });
+      this.routes.sort().reverse();
+    });
   }
 
   private handleError(errorMessage: string) {
