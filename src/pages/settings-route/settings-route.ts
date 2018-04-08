@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { ViewController, NavController, LoadingController, AlertController } from 'ionic-angular';
+import { ViewController, LoadingController, AlertController } from 'ionic-angular';
 import { SettingsService } from '../../services/settings';
-import { NgForm } from '@angular/forms';
 import { AuthService } from '../../services/auth';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'page-settings-route',
@@ -10,8 +10,13 @@ import { AuthService } from '../../services/auth';
 })
 export class SettingsRoutePage {
   route: string;
+  routes;
+  routesForm;
 
-  constructor(private viewCtrl: ViewController, private navCtrl: NavController, private loadingCtrl: LoadingController, private alertCtrl: AlertController, private settingsService: SettingsService, private authService: AuthService){
+  constructor(private viewCtrl: ViewController, private loadingCtrl: LoadingController, private alertCtrl: AlertController, private settingsService: SettingsService, private authService: AuthService){
+    this.routesForm = new FormGroup({
+      "routes": new FormControl()
+    });
   }
 
   ionViewWillEnter() {
@@ -22,30 +27,30 @@ export class SettingsRoutePage {
     this.viewCtrl.dismiss();
   }
 
-  onSubmit(form: NgForm) {
-    console.log(form);
-    // const loading = this.loadingCtrl.create({
-    //   content: 'Saving'
-    // });
-    // loading.present();
-    // this.route = form.value.route;
-    // this.settingsService.setRoute(this.route);
-    // this.authService.getActiveUser().getIdToken()
-    //   .then(
-    //     (token: string) => {
-    //       this.settingsService.storeSettings(token)
-    //         .subscribe(
-    //           () => {
-    //             loading.dismiss();
-    //             this.dismiss();
-    //           },
-    //           error => {
-    //             loading.dismiss();
-    //             this.handleError(error.json().error);
-    //           }
-    //         )
-    //     }
-    //   );
+  onSubmit() {
+    console.log(this.routesForm.value.routes);
+    this.route = this.routesForm.value.routes;
+    const loading = this.loadingCtrl.create({
+      content: 'Saving'
+    });
+    loading.present();
+    this.settingsService.setRoute(this.route);
+    this.authService.getActiveUser().getIdToken()
+      .then(
+        (token: string) => {
+          this.settingsService.storeSettings(token)
+            .subscribe(
+              () => {
+                loading.dismiss();
+                this.dismiss();
+              },
+              error => {
+                loading.dismiss();
+                this.handleError(error.json().error);
+              }
+            )
+        }
+      );
   }
 
   private handleError(errorMessage: string) {

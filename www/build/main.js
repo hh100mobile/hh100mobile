@@ -448,11 +448,11 @@ var map = {
 		7
 	],
 	"../pages/followrider/followrider.module": [
-		857,
+		856,
 		6
 	],
 	"../pages/hotels/hotels.module": [
-		856,
+		857,
 		5
 	],
 	"../pages/map/map.module": [
@@ -969,6 +969,7 @@ var SettingsNumberPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_settings__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_auth__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(35);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -982,14 +983,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var SettingsRoutePage = (function () {
-    function SettingsRoutePage(viewCtrl, navCtrl, loadingCtrl, alertCtrl, settingsService, authService) {
+    function SettingsRoutePage(viewCtrl, loadingCtrl, alertCtrl, settingsService, authService) {
         this.viewCtrl = viewCtrl;
-        this.navCtrl = navCtrl;
         this.loadingCtrl = loadingCtrl;
         this.alertCtrl = alertCtrl;
         this.settingsService = settingsService;
         this.authService = authService;
+        this.routesForm = new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormGroup */]({
+            "routes": new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */]()
+        });
     }
     SettingsRoutePage.prototype.ionViewWillEnter = function () {
         this.route = this.settingsService.getRoute();
@@ -997,30 +1001,26 @@ var SettingsRoutePage = (function () {
     SettingsRoutePage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
-    SettingsRoutePage.prototype.onSubmit = function (form) {
-        console.log(form);
-        // const loading = this.loadingCtrl.create({
-        //   content: 'Saving'
-        // });
-        // loading.present();
-        // this.route = form.value.route;
-        // this.settingsService.setRoute(this.route);
-        // this.authService.getActiveUser().getIdToken()
-        //   .then(
-        //     (token: string) => {
-        //       this.settingsService.storeSettings(token)
-        //         .subscribe(
-        //           () => {
-        //             loading.dismiss();
-        //             this.dismiss();
-        //           },
-        //           error => {
-        //             loading.dismiss();
-        //             this.handleError(error.json().error);
-        //           }
-        //         )
-        //     }
-        //   );
+    SettingsRoutePage.prototype.onSubmit = function () {
+        var _this = this;
+        console.log(this.routesForm.value.routes);
+        this.route = this.routesForm.value.routes;
+        var loading = this.loadingCtrl.create({
+            content: 'Saving'
+        });
+        loading.present();
+        this.settingsService.setRoute(this.route);
+        this.authService.getActiveUser().getIdToken()
+            .then(function (token) {
+            _this.settingsService.storeSettings(token)
+                .subscribe(function () {
+                loading.dismiss();
+                _this.dismiss();
+            }, function (error) {
+                loading.dismiss();
+                _this.handleError(error.json().error);
+            });
+        });
     };
     SettingsRoutePage.prototype.handleError = function (errorMessage) {
         var alert = this.alertCtrl.create({
@@ -1032,11 +1032,12 @@ var SettingsRoutePage = (function () {
     };
     SettingsRoutePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-settings-route',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Route</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <form #f="ngForm" (ngSubmit)="onSubmit(form.route)">\n    <ion-list radio-group>\n      <ion-item>\n        <ion-label>None</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'None\'" value="None"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'100-Mile\'" value="100-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>75 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'75-Mile\'" value="75-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>50 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'50-Mile\'" value="50-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>25 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'25-Mile\'" value="25-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Km</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'100-Km\'" value="100-Km"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>10 Km</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'10-Km\'" value="10-Km"></ion-radio>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit">Save</button>\n  </form>\n\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/,
+            selector: 'page-settings-route',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Route</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <form [formGroup]="routesForm" (ngSubmit)="onSubmit()">\n    <ion-list radio-group formControlName="routes">\n      <ion-item>\n        <ion-label>None</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'None\'" value="None"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'100-Mile\'" value="100-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>75 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'75-Mile\'" value="75-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>50 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'50-Mile\'" value="50-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>25 Mile</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'25-Mile\'" value="25-Mile"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>100 Km</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'100-Km\'" value="100-Km"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>10 Km</ion-label>\n        <ion-radio ng-model="form.route" [checked]="route == \'10-Km\'" value="10-Km"></ion-radio>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit">Save</button>\n  </form>\n\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */], __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */]) === "function" && _e || Object])
     ], SettingsRoutePage);
     return SettingsRoutePage;
+    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=settings-route.js.map
@@ -1186,8 +1187,8 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/attractions/attractions.module#AttractionsPageModule', name: 'AttractionsPage', segment: 'attractions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/entertainment/entertainment.module#EntertainmentPageModule', name: 'EntertainmentPage', segment: 'entertainment', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/hotels/hotels.module#HotelsPageModule', name: 'HotelsPage', segment: 'hotels', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/followrider/followrider.module#FollowriderPageModule', name: 'FollowriderPage', segment: 'followrider', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/hotels/hotels.module#HotelsPageModule', name: 'HotelsPage', segment: 'hotels', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/schedule/schedule.module#SchedulePageModule', name: 'SchedulePage', segment: 'schedule', priority: 'low', defaultHistory: [] },

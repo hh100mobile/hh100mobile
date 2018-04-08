@@ -16,8 +16,8 @@
 
 <ion-content padding>
 
-  <form #f="ngForm" (ngSubmit)="onSubmit(form.route)">
-    <ion-list radio-group>
+  <form [formGroup]="routesForm" (ngSubmit)="onSubmit()">
+    <ion-list radio-group formControlName="routes">
       <ion-item>
         <ion-label>None</ion-label>
         <ion-radio ng-model="form.route" [checked]="route == 'None'" value="None"></ion-radio>
