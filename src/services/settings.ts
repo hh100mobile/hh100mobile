@@ -13,17 +13,14 @@ export class SettingsService {
 
     setNumber(num: number) {
         this.settings.num = num;
-        console.log(this.settings.num);
     }
 
     setRoute(route: string) {
         this.settings.route = route;
-        console.log(this.settings.route);
     }
 
     setAllowLocation(location: boolean) {
         this.settings.location = location;
-        console.log(this.settings.location);
     }
 
     getNumber() {
@@ -39,8 +36,7 @@ export class SettingsService {
     }
 
     setNewSettings() {
-        this.settings = new Settings(0, "None", false)
-        console.log(this.settings);
+        this.settings = new Settings(0, "None", false);
     }
 
     storeSettings(token: string) {

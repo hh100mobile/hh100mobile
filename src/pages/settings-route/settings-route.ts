@@ -3,6 +3,7 @@ import { ViewController, LoadingController, AlertController } from 'ionic-angula
 import { SettingsService } from '../../services/settings';
 import { AuthService } from '../../services/auth';
 import { FormGroup, FormControl } from '@angular/forms';
+import firebase from 'firebase';
 
 @Component({
   selector: 'page-settings-route',
@@ -10,13 +11,15 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class SettingsRoutePage {
   route: string;
-  routes;
-  routesForm;
+  routes: FormControl;
+  routesForm: FormGroup;
+  routesList = [];
 
-  constructor(private viewCtrl: ViewController, private loadingCtrl: LoadingController, private alertCtrl: AlertController, private settingsService: SettingsService, private authService: AuthService){
+  constructor(private viewCtrl: ViewController, private loadingCtrl: LoadingController, private alertCtrl: AlertController, private settingsService: SettingsService, private authService: AuthService) {
     this.routesForm = new FormGroup({
       "routes": new FormControl()
     });
+    this.getRoutes();
   }
 
   ionViewWillEnter() {
@@ -28,7 +31,6 @@ export class SettingsRoutePage {
   }
 
   onSubmit() {
-    console.log(this.routesForm.value.routes);
     this.route = this.routesForm.value.routes;
     const loading = this.loadingCtrl.create({
       content: 'Saving'
@@ -60,6 +62,17 @@ export class SettingsRoutePage {
       buttons: ['Ok']
     });
     alert.present();
+  }
+
+  private getRoutes() {
+    const routeRef: firebase.database.Reference = firebase.database().ref(`/settings/routes/`);
+    routeRef.on('value', routeSnapshot => {
+      routeSnapshot.forEach( routeSnap => {
+        this.routesList.push(routeSnap.val());
+        return false;
+      });
+      this.routesList.sort().reverse();
+    });
   }
 
 }
