@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ViewController, NavController, LoadingController, AlertController } from 'ionic-angular';
+import { ViewController, LoadingController, AlertController } from 'ionic-angular';
 import { SettingsService } from '../../services/settings';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '../../services/auth';
@@ -11,7 +11,7 @@ import { AuthService } from '../../services/auth';
 export class SettingsNumberPage {
   num: number;
 
-  constructor(private viewCtrl: ViewController, private navCtrl: NavController, private loadingCtrl: LoadingController, private alertCtrl: AlertController, private settingsService: SettingsService, private authService: AuthService) {
+  constructor(private viewCtrl: ViewController, private loadingCtrl: LoadingController, private alertCtrl: AlertController, private settingsService: SettingsService, private authService: AuthService) {
   }
 
   ionViewWillEnter() {

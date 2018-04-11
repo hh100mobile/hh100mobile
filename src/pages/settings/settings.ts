@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, LoadingController, AlertController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
 import { SigninPage } from '../signin/signin';
 import { AuthService } from '../../services/auth';
@@ -19,7 +19,7 @@ export class SettingsPage {
   isAuthenticated = false;
   settings = new Settings(null, null, null);
 
-  constructor(public navCtrl: NavController, private authService: AuthService, private modalCtrl: ModalController, private settingsService: SettingsService, private loadingCtrl: LoadingController, private alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, private authService: AuthService, private modalCtrl: ModalController, private settingsService: SettingsService) {
   }
 
   ionViewCanEnter() {

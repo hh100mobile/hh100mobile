@@ -639,13 +639,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var SettingsPage = (function () {
-    function SettingsPage(navCtrl, authService, modalCtrl, settingsService, loadingCtrl, alertCtrl) {
+    function SettingsPage(navCtrl, authService, modalCtrl, settingsService) {
         this.navCtrl = navCtrl;
         this.authService = authService;
         this.modalCtrl = modalCtrl;
         this.settingsService = settingsService;
-        this.loadingCtrl = loadingCtrl;
-        this.alertCtrl = alertCtrl;
         this.isAuthenticated = false;
         this.settings = new __WEBPACK_IMPORTED_MODULE_9__models_settings__["a" /* Settings */](null, null, null);
     }
@@ -712,9 +710,10 @@ var SettingsPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-settings',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Settings</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <ion-list no-lines *ngIf="isAuthenticated">\n    <button ion-item (click)="changeRiderNumber()">\n      Rider Number\n      <ion-badge item-end>{{ settings.num }}</ion-badge>\n    </button>\n    <button ion-item (click)="changeRoute()">\n      <ion-label>Route</ion-label>\n      <ion-badge item-end>{{ settings.route }}</ion-badge>>\n    </button>\n    <button ion-item (click)="changeLocation()">\n      <ion-label>Location</ion-label>\n      <ion-checkbox checked="true" disabled="true" item-end></ion-checkbox>\n    </button>\n  </ion-list>\n\n  <button ion-button block (click)="onGoToSignUp()" *ngIf="!isAuthenticated">\n    Sign Up\n  </button>\n  <button ion-button block outline (click)="onGoToSignIn()" *ngIf="!isAuthenticated">\n    Sign In\n  </button>\n  <button ion-button block (click)="onSignOut()" *ngIf="isAuthenticated">\n    Sign Out\n  </button>\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings/settings.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__services_auth__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */], __WEBPACK_IMPORTED_MODULE_10__services_settings__["a" /* SettingsService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__services_auth__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_auth__["a" /* AuthService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_10__services_settings__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_settings__["a" /* SettingsService */]) === "function" && _d || Object])
     ], SettingsPage);
     return SettingsPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=settings.js.map
@@ -905,9 +904,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var SettingsNumberPage = (function () {
-    function SettingsNumberPage(viewCtrl, navCtrl, loadingCtrl, alertCtrl, settingsService, authService) {
+    function SettingsNumberPage(viewCtrl, loadingCtrl, alertCtrl, settingsService, authService) {
         this.viewCtrl = viewCtrl;
-        this.navCtrl = navCtrl;
         this.loadingCtrl = loadingCtrl;
         this.alertCtrl = alertCtrl;
         this.settingsService = settingsService;
@@ -951,9 +949,10 @@ var SettingsNumberPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-settings-number',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Rider Number</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form #f="ngForm" (ngSubmit)="onSubmit(f)">\n    <ion-item>\n      <ion-label>Rider Number</ion-label>\n      <ion-input type="number" ngModel value="{{ num }}" name="riderNumber" required></ion-input>\n    </ion-item>\n    <button ion-button block type="submit" [disabled]="!f.valid">Save</button>\n  </form>\n</ion-content>\n\n<!-- <ion-content padding>\n  <form #f="ngForm" (ngSubmit)="onSignUp(f)">\n    <ion-list>\n      <ion-item>\n        <ion-label fixed>Email</ion-label>\n        <ion-input type="email" ngModel name="email" required></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>Password</ion-label>\n        <ion-input type="password" ngModel name="password" required [minlength]="6"></ion-input>\n      </ion-item>\n    </ion-list>\n    <button ion-button block type="submit" [disabled]="!f.valid">Sign Up</button>\n  </form>\n</ion-content> -->'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-number/settings-number.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */], __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */]) === "function" && _e || Object])
     ], SettingsNumberPage);
     return SettingsNumberPage;
+    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=settings-number.js.map
@@ -1049,10 +1048,9 @@ var SettingsRoutePage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-settings-route',template:/*ion-inline-start:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Route</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <ion-icon md="md-close"></ion-icon>\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <form [formGroup]="routesForm" (ngSubmit)="onSubmit()">\n    <ion-list radio-group formControlName="routes">\n      <ion-item *ngFor="let element of routesList">\n        <ion-label>{{element}}</ion-label>\n        <ion-radio [value]="element" [checked]="route==element"></ion-radio>\n      </ion-item>\n    </ion-list>\n      <button ion-button block type="submit">Save</button>\n  </form>\n\n</ion-content>'/*ion-inline-end:"/Users/cotyhamilton/hh100mobile/src/pages/settings-route/settings-route.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__services_settings__["a" /* SettingsService */], __WEBPACK_IMPORTED_MODULE_3__services_auth__["a" /* AuthService */]])
     ], SettingsRoutePage);
     return SettingsRoutePage;
-    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=settings-route.js.map
@@ -1413,10 +1411,9 @@ var SettingsService = (function () {
     };
     SettingsService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__auth__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__auth__["a" /* AuthService */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_2__auth__["a" /* AuthService */]])
     ], SettingsService);
     return SettingsService;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=settings.js.map
