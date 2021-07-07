@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Route</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <ion-icon md="md-close"></ion-icon>
+        <span ion-text color="primary" showWhen="ios">Cancel</span>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+
+  <form [formGroup]="routesForm" (ngSubmit)="onSubmit()">
+    <ion-list radio-group formControlName="routes">
+      <ion-item *ngFor="let element of routesList">
+        <ion-label>{{element}}</ion-label>
+        <ion-radio [value]="element" [checked]="route==element"></ion-radio>
+      </ion-item>
+    </ion-list>
+      <button ion-button block type="submit">Save</button>
+  </form>
+
+</ion-content>

@@ -1,14 +1,56 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+  <ion-buttons end>
+    <button ion-button icon-only clear (click)="onGoToSettings()">
+      <ion-icon name="more"></ion-icon>
+    </button>
+  </ion-buttons>
 </ion-header>
 
+
+
 <ion-content padding>
-  The world is your oyster.
+  <ion-grid>
+    <ion-row justify-content-between text-center>
+      <ion-col>
+        <img src="assets/imgs/logo.png" alt="Hotter n' Hell Logo" />
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-card *ngIf="onIsAuthenticated()">
+    <img src="assets/imgs/general-google-map.png" alt="map" />
+    <ion-card-content>
+      <button ion-button block (click)="onGoToMap()">MAP</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="!onIsAuthenticated()">
+    <img src="assets/imgs/biker.png" alt="rider" />
+    <ion-card-content>
+      <button ion-button block (click)="onGoToFollowRider()">FOLLOW RIDER</button>
+    </ion-card-content>
+  </ion-card>
+
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    <button ion-button block (click)="onGoToSchedule()">SCHEDULE OF EVENTS</button>
+  </p>
+  <p>
+    <button ion-button block (click)="onGoToAttractions()">ATTRACTIONS</button>
+  </p>
+  <p>
+    <button ion-button block outline>93 DAYS | 17 HRS | 32 MIN | 18 SEC</button>
   </p>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row justify-content-between text-center>
+        <ion-col>{{temperature}}</ion-col>
+        <ion-col>{{wind_dir}}</ion-col>
+        <ion-col>{{wind_speed}}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

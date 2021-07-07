@@ -1,9 +1,3 @@
-<!--
-  Generated template for the SettingsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
@@ -12,7 +6,29 @@
 
 </ion-header>
 
-
 <ion-content padding>
+  <ion-list no-lines *ngIf="isAuthenticated">
+    <button ion-item (click)="changeRiderNumber()">
+      Rider Number
+      <ion-badge item-end>{{ settings.num }}</ion-badge>
+    </button>
+    <button ion-item (click)="changeRoute()">
+      <ion-label>Route</ion-label>
+      <ion-badge item-end>{{ settings.route }}</ion-badge>>
+    </button>
+    <button ion-item (click)="changeLocation()">
+      <ion-label>Location</ion-label>
+      <ion-checkbox checked="true" disabled="true" item-end></ion-checkbox>
+    </button>
+  </ion-list>
 
+  <button ion-button block (click)="onGoToSignUp()" *ngIf="!isAuthenticated">
+    Sign Up
+  </button>
+  <button ion-button block outline (click)="onGoToSignIn()" *ngIf="!isAuthenticated">
+    Sign In
+  </button>
+  <button ion-button block (click)="onSignOut()" *ngIf="isAuthenticated">
+    Sign Out
+  </button>
 </ion-content>
